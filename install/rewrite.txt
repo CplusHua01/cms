@@ -1,0 +1,11 @@
+[ISAPI_Rewrite] / RewriteEngine on
+RewriteRule ^/(login|register|user)$ /index.php?do=$1 [L]
+#register
+RewriteRule ^/register/(.*?)$ /index.php?do=register&key=$1 [L]
+RewriteRule ^/register-validate/(.*?)$ /index.php?do=register&act=validate&key=$1 [L]
+
+
+#for Nginx
+rewrite ^/(login|register|user)$ /index.php?do=$1 last;
+rewrite ^/register/(.*?)$ /index.php?do=register&key=$1 last;
+rewrite ^/register-validate/(.*?)$ /index.php?do=register&act=validate&key=$1 last;
