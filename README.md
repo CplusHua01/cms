@@ -1,5 +1,5 @@
 <div id="container">
-  <h3>OldCMS | 版本 1.0 | 开源、简单、安全的PHP开发框架</h3>
+  <h3>CMS | 版本 1.0 | 开源、简单、安全的PHP开发框架</h3>
   <p id="part1">
     1. 程序文件组织
     <pre><code>| install/                    /* 数据库文件、服务器Rewrite规则 */
@@ -46,15 +46,5 @@
   <p id="part4">
     4. 程序安全：为了增强程序的安全，获取$_GET,$_POST,$_COOKIE等变量值时请尽量使用<strong>Val</strong>方法，具体请看/source/function.php，其它获取的变量值过滤可使用StripStr方法。
   </p>
-  <p id="part5">
-    5. 程序下载：<a href="https://github.com/010blue/oldcms">https://github.com/010blue/oldcms</a>
-  </p>
-  <p id="part6">
-    6. 联系方式：010blue@gmail.com (blue) , QQ交流群：27887508。
-  </p>
-  <p id="part7">
-    7. 我的其它作品：
-    <a target="_blank" href="http://bluereader.org">深蓝阅读</a> 
-    <a target="_blank" href="http://www.maold.com">猫领地</a> (北京近期领养小猫可联系我～)
-  </p>
+
 </div>
