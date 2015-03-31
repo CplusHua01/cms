@@ -35,7 +35,7 @@ class User{
 	}
 	/* 登录界面 */
 	function ToLogin(){
-		include_once(ROOT_PATH.'/source/login.php');
+        header("location:login");
 		exit;
 	}
 	/* 登录 */

@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteRule ^(login|register|user)$ index.php?do=$1 [L]
+RewriteRule ^login/(.*?)$ index.php?do=login&act=submit [L]
+RewriteRule ^logout$ index.php?do=login&act=logout [L]
+RewriteRule ^admin/(.*?)$ index.php?do=admin&act=main [L]
+RewriteRule ^user/(.*?)$ index.php?do=user&act=main [L]
+RewriteRule ^register/(.*?)$ /index.php?do=register&key=$1 [L]
+RewriteRule ^register-validate/(.*?)$ /index.php?do=register&act=validate&key=$1 [L]

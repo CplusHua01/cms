@@ -7,7 +7,7 @@
 include('init.php');
 
 $do=Val('do','GET',0);
-$dos=array('index');
+$dos=array('index','login','user','admin');
 
 if(!in_array($do,$dos)) $do='index';
 

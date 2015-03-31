@@ -49,6 +49,10 @@ $url=array();
 $url['root']			=$config['urlroot'];
 $url['imagePath']		=FILE_PREFIX.'/image/';
 $url['themePath']		=$url['root'].'/themes/'.$template;
+$url['adminStyle']      =$url['themePath'].'/templates/admin/style/';
+$url['userStyle']      =$url['themePath'].'/templates/user/style/';
+$url['login']          =URL_ROOT.'login';
+
 
 $urlDoArray=array('login','register','user','login','logout');
 if($config['urlrewrite']){

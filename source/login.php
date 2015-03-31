@@ -5,7 +5,6 @@
  * OldCMS,site:http://www.oldcms.com
  */
 if(!defined('IN_OLDCMS')) die('Access Denied');
-
 $act=Val('act','GET');
 switch($act){
 	case 'submit':
@@ -24,10 +23,11 @@ switch($act){
 		$auto=Val('auto','POST',1);
 		if($user->userId<=0){
 			if($user->Login($username,$userpwd,$auto)){
-				header("Location: ".URL_ROOT);
-				exit;
-			}else{
-				ShowError('登录失败,请检查用户/邮箱或密码',$url['login']);
+//                $main = URL_ROOT.'/admin/main';
+                ShowSuccess('登录成功',URL_ROOT.'/admin/main');
+//                header("location:".URL_ROOT.'/admin/main');
+            }else{
+				ShowError('登录失败,请检查用户/邮箱或密码'.$userpwd,$url['login']);
 			}
 		}
 		break;
@@ -41,7 +41,10 @@ switch($act){
 			ShowError('已经登录');
 		}
 		$smarty=InitSmarty();
-		$smarty->display('login.html');
+        $smarty->assign('do',$do);
+        $smarty->assign('show',$show);
+        $smarty->assign('url',$url);
+		$smarty->display('admin/login.html');
 		break;
 }
 ?>

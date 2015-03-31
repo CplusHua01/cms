@@ -1,11 +1,11 @@
-#oldcms database
-drop database if exists oldcms;
-create database oldcms default character set utf8;
-use oldcms;
+#cms database
+drop database if exists cms;
+create database cms default character set utf8;
+use cms;
 
 #user 用户
-drop table if exists oc_user;
-create table oc_user
+drop table if exists sky_user;
+create table sky_user
 (
 	id int auto_increment primary key,
 	adminLevel tinyint(1) default 0, #管理级别:0,普通用户;1,管理员 
@@ -29,11 +29,11 @@ create table oc_user
 	loginTime int default 0,	#最近登录时间
 	addTime int default 0
 ) engine=MyISAM charset=utf8;
-insert into oc_user(id,adminLevel,userName,userPwd,email,addTime) values(1,1,'blue','8dc44dc22fdf8df1f5d191dbe13e2a22','010blue@gmail.com',UNIX_TIMESTAMP());	#默认用户：blue,密码：123456
+insert into sky_user(id,adminLevel,userName,userPwd,email,addTime) values(1,1,'sky','f11eed37d737eb8929d13ab8ff1434e4','sky@03sec.com',UNIX_TIMESTAMP());	#默认用户：blue,密码：123456
 
 #session 登陆session
-drop table if exists oc_session;
-create table oc_session
+drop table if exists sky_session;
+create table sky_session
 (
 	userId int default 0,
 	ocKey varchar(50),
@@ -51,8 +51,8 @@ create table oc_session
 
 
 #invite_reg 邀请注册
-drop table if exists oc_invite_reg;
-create table oc_invite_reg
+drop table if exists sky_invite_reg;
+create table sky_invite_reg
 (
 	id int auto_increment primary key,
 	userId int default 0,

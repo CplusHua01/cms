@@ -5,13 +5,8 @@
  * OldCMS,site:http://www.oldcms.com
  */
 if(!defined('IN_OLDCMS')) die('Access Denied');
-
-$act=Val('act','GET');
-
-switch($act){
-	default:
-		$smarty=InitSmarty();
-		$smarty->display('index.html');
-		break;
-}
+if($user->userId<=0) $user->ToLogin();
+$smarty=InitSmarty();
+$smarty->assign('do',$do);
+$smarty->display('admin/main.html');
 ?>

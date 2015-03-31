@@ -5,7 +5,7 @@
  * OldCMS,site:http://www.oldcms.com
  */
 if(!defined('IN_OLDCMS')) die('Access Denied');
-
+ob_start();
 /**
 	DBConnect 数据库连接方法
 	@param 	$configFile		string	数据库配置文件
@@ -41,13 +41,14 @@ function InitSmarty($templatePath=''){
 	@return $str	string	密码串
 */
 function OCEncrypt($str){
-	return md5('OldCMS|'.$str);
+	return md5('sgkSUSUAYYSDsasdawiu|'.$str);
 }
 
 /* OCSetCookie setcookie封装 */
 function OCSetCookie($name='',$value='',$expires=0,$path='/',$domain='',$httponly=true){
 	$path=$httponly && PHP_VERSION < '5.2.0' ? "$path; HttpOnly" : $path;
 	$secure=$_SERVER['SERVER_PORT']==443 ? 1 : 0;
+
 	if(PHP_VERSION<'5.2.0'){
 		setcookie($name,$value,$expires,$path,$domain,$secure);
 	}else{

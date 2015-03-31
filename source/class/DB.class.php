@@ -48,14 +48,8 @@ class DB_Mysql implements IDataBase{
 		if($pconnect){
 			$this->linkId=mysql_pconnect($this->host,$this->username,$this->password);
 		}else{
-			$this->linkId=mysql_connect($this->host,$this->username,$this->password);
-		}
-		if(!empty($this->linkId)){
-			mysql_query("SET NAMES '".$this->charset."'",$this->linkId);
-			if(mysql_select_db($this->database,$this->linkId)) return $this->linkId;
-		}else{
-			return false;
-		}
+            $this->linkId=mysqli_connect($this->host,$this->username,$this->password,$this->database);
+        }
 	}
 	/* disconnect to database */
 	private function Disconnect(){
@@ -66,7 +60,7 @@ class DB_Mysql implements IDataBase{
 	}
 	/* execute without result */
 	public function Execute($sql){
-		return mysql_query($sql,$this->linkId);
+		return mysqli_query($this->linkId,$sql);
 	}
 	/* auto execute type=>insert/update */
 	public function AutoExecute($table,$array=array(),$type='INSERT',$where=''){
@@ -96,7 +90,7 @@ class DB_Mysql implements IDataBase{
 	/* return dataset of query */
 	public function Dataset($sql){
 		$this->rows=array();
-		$this->queryId=mysql_query($sql,$this->linkId);
+		$this->queryId=mysqli_query($this->linkId,$sql);
 		while($row=mysql_fetch_assoc($this->queryId)){
 			$this->rows[]=$row;
 		}
@@ -105,8 +99,8 @@ class DB_Mysql implements IDataBase{
 	}
 	/* return first row */
 	public function FirstRow($sql){
-		$this->queryId=mysql_query($sql,$this->linkId);
-		$row=mysql_fetch_assoc($this->queryId);
+		$this->queryId=mysqli_query($this->linkId,$sql);
+		$row=mysqli_fetch_assoc($this->queryId);
 		if(!empty($row)){
 			$this->rowsNum=1;
 			return $row;
@@ -118,7 +112,7 @@ class DB_Mysql implements IDataBase{
 	/* return first column (array) */
 	public function FirstColumn($sql){
 		$Columns=array();
-		$this->queryId=mysql_query($sql,$this->linkId);
+		$this->queryId=mysqli_query($this->linkId,$sql);
 		while($row=@mysql_fetch_row($this->queryId)){
 			$Columns[]=$row[0];
 		}
@@ -127,7 +121,7 @@ class DB_Mysql implements IDataBase{
 	}
 	/* return first value */
 	public function FirstValue($sql){
-		$this->queryId=mysql_query($sql,$this->linkId);
+		$this->queryId=mysqli_query($this->linkId,$sql);
 		$row=@mysql_fetch_row($this->queryId);
 		if(!empty($row)){
 			$this->rowsNum=1;

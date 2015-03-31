@@ -46,5 +46,4 @@
   <p id="part4">
     4. 程序安全：为了增强程序的安全，获取$_GET,$_POST,$_COOKIE等变量值时请尽量使用<strong>Val</strong>方法，具体请看/source/function.php，其它获取的变量值过滤可使用StripStr方法。
   </p>
-
 </div>
