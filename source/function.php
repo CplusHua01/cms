@@ -361,4 +361,8 @@ function Request($url,$data='',$headers) {
 	if(is_int($error) && $error>0) return array('error'=>$error);
 	return $result;
 }
+function UrlValidate($validateKey){
+    return URL_ROOT.'/register-validate/'.$validateKey;
+}
+
 ?>

@@ -54,7 +54,7 @@ class DB_Mysql implements IDataBase{
 	/* disconnect to database */
 	private function Disconnect(){
 		if(!empty($this->linkId)){
-			if(!empty($this->queryId)) mysql_free_result($this->queryId);
+			if(!empty($this->queryId)) mysqli_free_result($this->queryId);
 			return mysql_close($this->linkId);
 		}
 	}
@@ -91,7 +91,7 @@ class DB_Mysql implements IDataBase{
 	public function Dataset($sql){
 		$this->rows=array();
 		$this->queryId=mysqli_query($this->linkId,$sql);
-		while($row=mysql_fetch_assoc($this->queryId)){
+		while($row=mysqli_fetch_assoc($this->queryId)){
 			$this->rows[]=$row;
 		}
 		$this->rowsNum=count($this->rows);
@@ -113,7 +113,7 @@ class DB_Mysql implements IDataBase{
 	public function FirstColumn($sql){
 		$Columns=array();
 		$this->queryId=mysqli_query($this->linkId,$sql);
-		while($row=@mysql_fetch_row($this->queryId)){
+		while($row=@mysqli_fetch_row($this->queryId)){
 			$Columns[]=$row[0];
 		}
 		$this->rowsNum=count($Columns);
@@ -122,7 +122,7 @@ class DB_Mysql implements IDataBase{
 	/* return first value */
 	public function FirstValue($sql){
 		$this->queryId=mysqli_query($this->linkId,$sql);
-		$row=@mysql_fetch_row($this->queryId);
+		$row=@mysqli_fetch_row($this->queryId);
 		if(!empty($row)){
 			$this->rowsNum=1;
 			return $row[0];

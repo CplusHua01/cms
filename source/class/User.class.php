@@ -113,5 +113,19 @@ class User{
 	function CheckToken($token=''){
 		return $token==$this->token;
 	}
+
+    /**
+     * 判断当前登录用户是是否拥有后台权限
+     * @param $username
+     * @return 返回 0或者1
+     */
+    function getAdminLevel($username){
+        $sql="SELECT adminLevel FROM sky_user WHERE userName= '".$username."' AND adminLevel = 1";
+        return $this->db->FirstRow($sql);
+    }
+    function getUserNum(){
+        $sql="SELECT count(*) FROM sky_user";
+        return $this->db->FirstValue($sql);
+    }
 }
 ?>

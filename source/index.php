@@ -6,7 +6,13 @@
  */
 if(!defined('IN_OLDCMS')) die('Access Denied');
 if($user->userId<=0) $user->ToLogin();
+$userName=$user->userName;
 $smarty=InitSmarty();
 $smarty->assign('do',$do);
-$smarty->display('admin/main.html');
+$smarty->assign('user',$userName);
+if($user->adminLevel == 1){
+    $smarty->display('admin/main.html');
+}else{
+    $smarty->display('user/main.html');
+}
 ?>

@@ -23,11 +23,14 @@ switch($act){
 		$auto=Val('auto','POST',1);
 		if($user->userId<=0){
 			if($user->Login($username,$userpwd,$auto)){
-//                $main = URL_ROOT.'/admin/main';
-                ShowSuccess('登录成功',URL_ROOT.'/admin/main');
-//                header("location:".URL_ROOT.'/admin/main');
+                $adminLevels=$user->getAdminLevel($username);
+                if(!empty($adminLevels)){
+                    ShowSuccess('管理员登录成功',URL_ROOT.'/admin/main');
+                }else {
+                    ShowSuccess('用户登录成功', URL_ROOT . '/user/main');
+                }
             }else{
-				ShowError('登录失败,请检查用户/邮箱或密码'.$userpwd,$url['login']);
+				ShowError('登录失败,请检查用户/邮箱或密码',$url['login']);
 			}
 		}
 		break;

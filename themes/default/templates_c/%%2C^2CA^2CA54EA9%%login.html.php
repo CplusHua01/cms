@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.25, created on 2015-03-31 10:40:04
+<?php /* Smarty version 2.6.25, created on 2015-04-01 12:35:40
          compiled from admin/login.html */ ?>
 <!DOCTYPE html>
 <html>  
@@ -86,7 +86,7 @@ images/logo-login%402x.png" /></a>
         </form>
         <div class="social-login clearfix">
           <!--<a class="btn btn-primary pull-left facebook" href="index-2.html"><i class="icon-facebook"></i>Facebook login</a><a class="btn btn-primary pull-right twitter" href="index-2.html"><i class="icon-twitter"></i>Twitter login</a>-->
-            还没有帐号? <a href="signup1.html">现在就注册一个帐号</a>
+            还没有帐号? <a href="register">现在就注册一个帐号</a>
 
         </div>
 

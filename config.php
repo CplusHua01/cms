@@ -54,9 +54,9 @@ $config['mail']=array(
 	'mailer'			=>'smtp',				//smtp,mail,sendmail,qmail
 	'host'				=>'smtp.qq.com',		//smtp server
 	'port'       		=>25,					//server port
-	'username'   		=>'admin@oldcms.com',	//server username
-	'password'   		=>'123456',				//server password
-	'name'   			=>'OldCMS',				//发件用户名称
+	'username'   		=>'1481381838@qq.com',	//server username
+	'password'   		=>'25251325.',				//server password
+	'name'   			=>'社工库邮箱验证',				//发件用户名称
 	'charset'    		=>'utf-8',				//内容编码
 	'contentType'		=>'html'				//html/txt(默认为txt)
 );

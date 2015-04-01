@@ -1,5 +1,6 @@
-<?php /* Smarty version 2.6.25, created on 2015-03-31 15:27:52
+<?php /* Smarty version 2.6.25, created on 2015-04-01 13:44:39
          compiled from notice.html */ ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -7,17 +8,17 @@
     <title><?php echo $this->_tpl_vars['notice']['str']; ?>
 </title>
     <link rel="stylesheet" href="<?php echo $this->_tpl_vars['url']['themePath']; ?>
-/css/style/screen.css" type="text/css">
+/templates/css/screen.css" type="text/css">
     <link rel="stylesheet" href="<?php echo $this->_tpl_vars['url']['themePath']; ?>
-/css/style/print.css" type="text/css">
+/templates/css/print.css" type="text/css">
     <!--[if lt IE 8]><link rel="stylesheet" href="<?php echo $this->_tpl_vars['url']['themePath']; ?>
-/style/ie.css" type="text/css"><![endif]-->
+/templates/css/ie.css" type="text/css"><![endif]-->
     <link rel="stylesheet" href="<?php echo $this->_tpl_vars['url']['themePath']; ?>
-/css/style/style.css" type="text/css">
-    <script type="text/javascript">
-        setTimeout("location.href='<?php echo $this->_tpl_vars['notice']['turnto']; ?>
-'",500);
-    </script>
+/templates/css/style.css" type="text/css">
+    <!--<script type="text/javascript">-->
+        <!--setTimeout("location.href='<?php echo $this->_tpl_vars['notice']['turnto']; ?>
+'",1000);-->
+    <!--</script>-->
 </head>
 <body>
 <div class="container">
@@ -25,8 +26,7 @@
 "><?php echo $this->_tpl_vars['notice']['str']; ?>
  <a href="<?php echo $this->_tpl_vars['notice']['turnto']; ?>
 "><?php echo $this->_tpl_vars['notice']['urltitle']; ?>
-</a>
-        </div>
+</a></div>
 </div>
 </body>
 </html>

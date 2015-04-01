@@ -12,6 +12,7 @@ switch($act){
 	case 'checkue':
 		$username=Val('user','POST');
 		$email=Val('email','POST');
+        $email =strtolower($email);
 		$db=DBConnect();
 		$tbUser=$db->tbPrefix.'user';
 		$userExisted=$db->FirstValue("SELECT COUNT(*) FROM {$tbUser} WHERE userName='{$username}'");
@@ -33,10 +34,14 @@ switch($act){
 		$username=Val('user','POST');
 		$email=Val('email','POST');
 		$userpwd=Val('pwd','POST');
+        $userpwd2=Val('pwd2','POST');
+        $email =strtolower($email);
 		//判断格式
 		if(empty($username) || !preg_match('/^[\w\x{4e00}-\x{9fa5}]{2,20}$/u',$username)) ShowError('用户格式不正确',$url['register'],'重新填写');
 		if(empty($email) || !preg_match('/^(\w+\.)*?\w+@(\w+\.)+\w+$/',$email)) ShowError('邮箱格式不正确',$url['register'],'重新填写');
 		if(empty($userpwd) || !preg_match('/^.{6,20}$/',$userpwd)) ShowError('密码应为6-20位字符',$url['register'],'重新填写');
+        //判断两次密码输入是否一致
+        if($userpwd!=$userpwd2) ShowError("两次密码输入不一样",'javascript:history.back(-1)','重新填写');
 		$tbUser=$db->tbPrefix.'user';
 		//用户是否存在
 		$userExisted=$db->FirstValue("SELECT COUNT(*) FROM {$tbUser} WHERE userName='{$username}'");
@@ -90,7 +95,7 @@ switch($act){
 		$smarty->assign('key',$key);
 		$smarty->assign('show',$show);
 		$smarty->assign('url',$url);
-		$smarty->display('register.html');
+		$smarty->display('admin/register.html');
 		break;
 }
 ?>

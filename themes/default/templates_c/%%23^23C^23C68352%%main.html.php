@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.25, created on 2015-03-31 15:46:00
+<?php /* Smarty version 2.6.25, created on 2015-04-01 14:52:31
          compiled from admin/main.html */ ?>
 <!DOCTYPE html>
 <html>
@@ -183,7 +183,8 @@ images/avatar-male2.png" />今天买7宗罪, 这是一个伟大的主题...</a>
               </li>
               <li class="dropdown user hidden-xs"><a data-toggle="dropdown" class="dropdown-toggle" href="#">
                 <img width="34" height="34" src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-images/avatar-male.jpg" />约翰。史密斯<b class="caret"></b></a>
+images/avatar-male.jpg" /><?php echo $this->_tpl_vars['user']; ?>
+<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">
                     <i class="icon-user"></i>我的帐户</a>
@@ -311,7 +312,7 @@ images/avatar-male.jpg" />约翰。史密斯<b class="caret"></b></a>
                   <li>
                     <a href="login2.html">登录2</a>
                   </li>
-                  <li><a href="signup1.html">
+                  <li><a href="register.html">
                     <span class="notifications label label-warning">新</span>
                     <p>
                       注册 1
@@ -359,7 +360,8 @@ images/avatar-male.jpg" />约翰。史密斯<b class="caret"></b></a>
               <div class="col-md-4">
                 <div class="number">
                   <div class="icon globe"></div>
-                  86 天
+                  <?php echo $this->_tpl_vars['sitedays']; ?>
+ 天
                 </div>
                 <div class="text">
                     网站运营时长
@@ -368,7 +370,8 @@ images/avatar-male.jpg" />约翰。史密斯<b class="caret"></b></a>
               <div class="col-md-4">
                 <div class="number">
                   <div class="icon visitors"></div>
-                  613 名
+                  <?php echo $this->_tpl_vars['num']; ?>
+ 名
                 </div>
                 <div class="text">
                     成功注册人数
