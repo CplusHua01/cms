@@ -47,7 +47,7 @@ switch($act){
         $smarty->assign('do',$do);
         $smarty->assign('show',$show);
         $smarty->assign('url',$url);
-		$smarty->display('admin/login.html');
+		$smarty->display('admin/login.tpl');
 		break;
 }
 ?>

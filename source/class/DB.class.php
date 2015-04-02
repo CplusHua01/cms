@@ -91,10 +91,12 @@ class DB_Mysql implements IDataBase{
 	public function Dataset($sql){
 		$this->rows=array();
 		$this->queryId=mysqli_query($this->linkId,$sql);
-		while($row=mysqli_fetch_assoc($this->queryId)){
-			$this->rows[]=$row;
-		}
-		$this->rowsNum=count($this->rows);
+//        if($this->queryId){
+            while($row=mysqli_fetch_assoc($this->queryId)){
+                $this->rows[]=$row;
+            }
+            $this->rowsNum=count($this->rows);
+//        }
 		return $this->rows;
 	}
 	/* return first row */

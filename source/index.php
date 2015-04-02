@@ -11,8 +11,8 @@ $smarty=InitSmarty();
 $smarty->assign('do',$do);
 $smarty->assign('user',$userName);
 if($user->adminLevel == 1){
-    $smarty->display('admin/main.html');
+    $smarty->display('admin/main.tpl');
 }else{
-    $smarty->display('user/main.html');
+    $smarty->display('user/main.tpl');
 }
 ?>

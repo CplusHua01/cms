@@ -146,7 +146,7 @@ function Notice($str='',$turnto=URL_ROOT,$time=3,$style='success',$urltitle){
 	$smarty->assign('show',$show);
 	$smarty->assign('url',$url);
 	$smarty->assign('notice',$notice);
-	$smarty->display('notice.html');
+	$smarty->display('notice.tpl');
 	exit;
 }
 

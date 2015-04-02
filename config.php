@@ -16,7 +16,7 @@ $config['tbPrefix']		='sky_';					//表名前缀
 $config['dbType']		='mysql';				//数据库类型(目前只支持mysql)
 
 /* 注册配置 */
-$config['register']		='normal';				//normal,正常;invite,只允许邀请注册;close,关闭注册功能
+$config['register']		='invite';				//normal,正常;invite,只允许邀请注册;close,关闭注册功能
 $config['mailauth']		=true;					//注册时是否邮箱验证
 
 /* url配置 */
@@ -52,10 +52,10 @@ $config['point']=array(
 /* 邮件服务器配置 */
 $config['mail']=array(
 	'mailer'			=>'smtp',				//smtp,mail,sendmail,qmail
-	'host'				=>'smtp.qq.com',		//smtp server
+	'host'				=>'smtp-ent.21cn.com',		//smtp server
 	'port'       		=>25,					//server port
-	'username'   		=>'xxxx@qq.com',	//server username
-	'password'   		=>'xxxx.',				//server password
+	'username'   		=>'akjwdhawdjawhd@21cn.com',	//server username
+	'password'   		=>'25251325a',				//server password
 	'name'   			=>'社工库邮箱验证',				//发件用户名称
 	'charset'    		=>'utf-8',				//内容编码
 	'contentType'		=>'html'				//html/txt(默认为txt)

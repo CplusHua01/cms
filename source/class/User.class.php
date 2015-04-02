@@ -84,7 +84,7 @@ class User{
 		$smarty->assign('email',$email);
 		$smarty->assign('show',$show);
 		$smarty->assign('url',$url);
-		$smarty->display('validate.html');
+		$smarty->display('validate.tpl');
 		exit;
 	}
 	/* 退出 */

@@ -9,14 +9,14 @@
     <schema name="" catalog="cms"/>
     <table name="sky_invite_reg" schema="" catalog="cms" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="userId" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="addKeyUser" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12"/>
       <column name="inviteKey" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <column name="isUsed" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MA=="/>
-      <column name="regUserId" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="regUserName" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="regUserEmail" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12"/>
       <column name="regTime" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
       <column name="addTime" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
       <primary-key name="PRIMARY" columns="id"/>
-      <index name="userId" unique="false" columns="userId"/>
     </table>
     <table name="sky_session" schema="" catalog="cms" type="TABLE">
       <column name="userId" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>

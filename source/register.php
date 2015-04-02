@@ -95,7 +95,7 @@ switch($act){
 		$smarty->assign('key',$key);
 		$smarty->assign('show',$show);
 		$smarty->assign('url',$url);
-		$smarty->display('admin/register.html');
+		$smarty->display('admin/register.tpl');
 		break;
 }
 ?>
