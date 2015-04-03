@@ -102,7 +102,8 @@ class DB_Mysql implements IDataBase{
 	/* return first row */
 	public function FirstRow($sql){
 		$this->queryId=mysqli_query($this->linkId,$sql);
-		$row=mysqli_fetch_assoc($this->queryId);
+        while($row=mysqli_fetch_assoc($this->queryId)){
+
 		if(!empty($row)){
 			$this->rowsNum=1;
 			return $row;
@@ -110,6 +111,7 @@ class DB_Mysql implements IDataBase{
 			$this->rowsNum=0;
 			return false;
 		}
+        }
 	}
 	/* return first column (array) */
 	public function FirstColumn($sql){

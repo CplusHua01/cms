@@ -64,5 +64,5 @@ $config['mail']=array(
 /* 其它设置 */
 $config['timezone']		='Asia/Shanghai';		//时区
 $config['expires']		=3600;					//过期时长(秒)
-$config['debug']		=true;					//调试模式(是否显示程序、数据库等错误)
+$config['debug']		=false;					//调试模式(是否显示程序、数据库等错误)
 ?>

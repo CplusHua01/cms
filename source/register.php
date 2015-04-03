@@ -9,6 +9,7 @@ if(REGISTER=='close') ShowError('注册功能已关闭');
 
 $act=Val('act','GET');
 switch($act){
+    //
 	case 'checkue':
 		$username=Val('user','POST');
 		$email=Val('email','POST');
@@ -19,16 +20,17 @@ switch($act){
 		$emailExisted=$db->FirstValue("SELECT COUNT(*) FROM {$tbUser} WHERE email='{$email}'");
 		echo $userExisted.'|'.$emailExisted;
 		break;
+    //注册表单验证
 	case 'submit':
 		if($user->userId>0) ShowError('您已登录,不能进行注册');
 		$db=DBConnect();
 		$key=Val('key','POST');
 		if(!empty($key)){
 			$tbInviteReg=$db->tbPrefix.'invite_reg';
-			$inviteRow=$db->FirstRow("SELECT id,userId FROM {$tbInviteReg} WHERE inviteKey='{$key}' AND isUsed=0");
+			$inviteRow=$db->FirstRow("SELECT id,regUserName FROM {$tbInviteReg} WHERE inviteKey='{$key}' AND isUsed=0");
 		}
 		if(REGISTER=='invite'){
-			if(empty($key)) ShowError('本站目前仅能邀请注册');
+			if(empty($key)) ShowError('本站目前仅能邀请注册,请联系站长索要邀请码. sky#03sec.com(#换位@)');
 			if(empty($inviteRow)) ShowError('你的邀请码不正确或已作废');
 		}
 		$username=Val('user','POST');
@@ -58,11 +60,11 @@ switch($act){
 				$regUserId=$db->LastId();
 				//邀请奖励
 				$pointAward=intval($pointConfig['award']['invitereg']);
-				if($pointAward>0){
-					$db->Execute("UPDATE {$tbUser} SET hotNum=hotNum+1,creditPoint=creditPoint+{$pointAward},rankPoint=rankPoint+{$pointAward} WHERE id='{$inviteRow[userId]}'");
-					Remind('用户 <a href="'.UrlUser($regUserId,$username).'">'.$username.'</a> 通过你的邀请注册,已奖励你 '.$pointAward.' 积分',$inviteRow['userId']);
-				}
-				$db->Execute("UPDATE {$tbInviteReg} SET isUsed=1,regUserId='{$regUserId}',regTime='".time()."' WHERE id='{$inviteRow[id]}'");
+//				if($pointAward>0){
+//					$db->Execute("UPDATE {$tbUser} SET hotNum=hotNum+1,creditPoint=creditPoint+{$pointAward},rankPoint=rankPoint+{$pointAward} WHERE id='{$inviteRow[userId]}'");
+//					Remind('用户 <a href="'.UrlUser($regUserId,$username).'">'.$username.'</a> 通过你的邀请注册,已奖励你 '.$pointAward.' 积分',$inviteRow['userId']);
+//				}
+				$db->Execute("UPDATE {$tbInviteReg} SET isUsed=1,regUserEmail='{$email}',regUserName='{$username}',regTime='".time()."' WHERE id='{$inviteRow[id]}'");
 			}
 			if(MAIL_AUTH){
 				$validateUrl=UrlValidate($validateKey);
@@ -76,6 +78,7 @@ switch($act){
 			ShowError('出错了,请与管理员联系');
 		}
 		break;
+    //邮箱验证
 	case 'validate':
 		$key=Val('key','GET');
 		$db=DBConnect();
@@ -85,10 +88,14 @@ switch($act){
 		$db->Execute("UPDATE {$tbUser} SET validated=1 WHERE validateKey='{$key}'");
 		ShowSuccess('验证成功,欢迎加入'.$show['sitename'],$url['login'],'登录');
 		break;
+    case 'key':
+        $key=Val('key','GET');
+        echo "hello reg key";
+        break;
+    //默认
 	default:
 		if($user->userId>0) ShowError('您已登录,不能进行注册');
 		$key=Val('key','GET');
-		if(REGISTER=='invite' && empty($key)) ShowError('本站目前仅能邀请注册');
 		$smarty=InitSmarty();
 		$smarty->assign('do',$do);
 		$smarty->assign('register',REGISTER);

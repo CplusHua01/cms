@@ -150,14 +150,15 @@
                                         <td><button class="btn btn-xs btn-info-outline" onclick="alert('{$url.root}register/key/{$keyinfo[index].inviteKey}');" >复制</button></td>
                                     </tr>
                                             {else}
-                                            <td style="color: #FF66CC"><del>{$keyinfo[index].addKeyUser}</del></td>
-                                            <td style="color: #FF66CC"><del>{$keyinfo[index].inviteKey}</del></td>
-                                            <td style="color: #FF66CC"><del>{$keyinfo[index].regUserName}</del></td>
-                                            <td style="color: #FF66CC"><del>{$keyinfo[index].regUserEmail}</del></td>
-                                            <td style="color: #FF66CC"><del>{$keyinfo[index].addTime|date_format:'%Y-%m-%d'}</del></td>
-                                            <td style="color: #FF66CC"><del>{$keyinfo[index].regTime|date_format:'%Y-%m-%d'}</del></td>
-                                            <td><button class="btn btn-xs ">已用</button></td>
-
+                                            <tr style="color: #FF66CC;text-decoration: line-through">
+                                            <td>{$keyinfo[index].addKeyUser}</td>
+                                            <td>{$keyinfo[index].inviteKey}</td>
+                                            <td>{$keyinfo[index].regUserName}</td>
+                                            <td>{$keyinfo[index].regUserEmail}</td>
+                                            <td>{$keyinfo[index].addTime|date_format:'%Y-%m-%d'}</td>
+                                            <td>{$keyinfo[index].regTime|date_format:'%Y-%m-%d'}</td>
+                                            <td><button class="btn btn-xs " disabled>已用</button></td>
+                                            </tr>
                                         {/if}
                                     {/section}
 
