@@ -46,15 +46,32 @@ $db=DBConnect();
 //邀请码表
 $tbInviteReg=$db->tbPrefix.'invite_reg';
 
+//用户表
+
+$tbUser=$db->tbPrefix.'user';
+
+
 $act=Val('act','GET');
 switch($act){
     case "key":
+        $where = " AND isOpen=1";
+        $title='邀请码管理';
         $sql="select * from ".$tbInviteReg." WHERE addKeyUser = '".$userName."' ORDER BY id DESC";
-        $keyinfo = $db->Dataset($sql);
+//        $pager = new Pager('select count(*) from sky_invite_reg;',$sql);
+        $conutsql="SELECT count(*) FROM   ".$tbInviteReg." WHERE addKeyUser = '".$userName."' ORDER BY id DESC";
+//        $href = "index.php?do=admin&act=key";
+//        $keyinfo = $db->Dataset($sql);
+        $href="/admin/key";
+        $pager = new Pager($conutsql,$sql,$href,2,10,Val('pNO','GET',1));
+        $keyinfo = $pager->data;
+//        if(!empty($act)) $href.='&act='.$act;
         $smarty=InitSmarty();
         $smarty->assign('user',$userName);
         $smarty->assign('keyinfo',$keyinfo);
         $smarty->assign('url',$url);
+        $smarty->assign('title',$title);
+        $smarty->assign('info',$act);
+        $smarty->assign('nav',$pager->nav);
         $smarty->display('admin/key.tpl');
         break;
     case "newKey":
@@ -76,15 +93,37 @@ switch($act){
             ShowError('操作失败，请联系管理员',URL_ROOT.'/admin/key');
         }
         break;
+    case "time":
+
+        $smarty=InitSmarty();
+
+        $smarty->assign('info','time');
+        $smarty->display('admin/time.tpl');
+
+
+
+        break;
+    case "usermanage":
+        $sql="select * from ".$tbUser." ORDER BY id;";
+        $umanage = $db->Dataset($sql);
+        $smarty=InitSmarty();
+        $smarty->assign('info','usermanage');
+        $smarty->assign('umanage',$umanage);
+        $smarty->display('admin/umanage.tpl');
+
+        break;
     default:
         $UNUM=$user->getUserNum();
         $smarty=InitSmarty();
+        $title='后台管理面板';
         $smarty->assign('do',$do);
         $smarty->assign('show',$show);
         $smarty->assign('url',$url);
         $smarty->assign('user',$userName);
         $smarty->assign('num',$UNUM);
         $smarty->assign('sitedays',$sitedays);
+        $smarty->assign('title',$title);
+        $smarty->assign('info','');
         $smarty->display('admin/main.tpl');
         break;
 }

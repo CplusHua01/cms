@@ -1,0 +1,1 @@
+{include file="user/top.tpl"}

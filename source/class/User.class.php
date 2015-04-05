@@ -69,7 +69,7 @@ class User{
 				}else{
 					$this->db->AutoExecute($this->tbSession,$sqlValue);
 				}
-				$this->db->Execute("UPDATE ".$this->tbUser." SET loginTime='".time()."' WHERE id='{$row[id]}'");
+				$this->db->Execute("UPDATE ".$this->tbUser." SET loginTime='".time()."',ip='".IP()."' WHERE id='{$row[id]}'");
 			}
 			return true;
 		}else{

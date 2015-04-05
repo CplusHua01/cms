@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="{$url.themePath}/templates/css/print.css" type="text/css">
     <!--[if lt IE 8]><link rel="stylesheet" href="{$url.themePath}/templates/css/ie.css" type="text/css"><![endif]-->
     <link rel="stylesheet" href="{$url.themePath}/templates/css/style.css" type="text/css">
-    <!--<script type="text/javascript">-->
-        <!--setTimeout("location.href='{$notice.turnto}'",1000);-->
-    <!--</script>-->
+    <script type="text/javascript">
+        setTimeout("location.href='{$notice.turnto}'",1000);
+    </script>
 </head>
 <body>
 <div class="container">

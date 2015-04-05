@@ -40,7 +40,6 @@
       <column name="email" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <column name="validated" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MA=="/>
       <column name="validateKey" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="sex" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MA=="/>
       <column name="avatarImg" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <column name="avatarImg_b" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
       <column name="avatarImg_s" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
@@ -54,6 +53,7 @@
       <column name="hotNum" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
       <column name="loginTime" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
       <column name="addTime" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="ip" sqlType="CHAR" precision="16" scale="0" nullable="true" jdbcType="1"/>
       <primary-key name="PRIMARY" columns="id"/>
     </table>
   </data-source>
