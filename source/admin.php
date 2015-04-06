@@ -54,20 +54,19 @@ $tbUser=$db->tbPrefix.'user';
 $act=Val('act','GET');
 switch($act){
     case "key":
-        $where = " AND isOpen=1";
         $title='邀请码管理';
         $sql="select * from ".$tbInviteReg." WHERE addKeyUser = '".$userName."' ORDER BY id DESC";
-        $conutsql="SELECT count(*) FROM   ".$tbInviteReg." WHERE addKeyUser = '".$userName."' ORDER BY id DESC";
+        $kconutsql="SELECT count(*) FROM   ".$tbInviteReg." WHERE addKeyUser = '".$userName."' ORDER BY id DESC";
         $href=URL_ROOT."/admin/key";
-        $pager = new Pager($conutsql,$sql,$href,8,10,Val('pNO','GET',1));
-        $keyinfo = $pager->data;
+        $kpager = new Pager($kconutsql,$sql,$href,8,10,Val('pNO','GET',1));
+        $keyinfo = $kpager->data;
         $smarty=InitSmarty();
         $smarty->assign('user',$userName);
         $smarty->assign('keyinfo',$keyinfo);
         $smarty->assign('url',$url);
         $smarty->assign('title',$title);
         $smarty->assign('info',$act);
-        $smarty->assign('nav',$pager->nav);
+        $smarty->assign('keynav',$kpager->nav);
         $smarty->display('admin/key.tpl');
         break;
     case "newKey":
@@ -100,10 +99,16 @@ switch($act){
 
         break;
     case "usermanage":
-        $sql="select * from ".$tbUser." ORDER BY id;";
+        $sql="select * from ".$tbUser." ORDER BY id DESC";
+        $ucountsql="SELECT count(*) FROM ".$tbUser." WHERE 1=1 ORDER BY id DESC";
+        $href=URL_ROOT."/admin/usermanage";
+        $upager=new Pager($ucountsql,$sql,$href,8,10,Val('pNO','GET',1));
+        $uinfo = $upager->data;
         $umanage = $db->Dataset($sql);
         $smarty=InitSmarty();
         $smarty->assign('info','usermanage');
+        $smarty->assign('uinfo',$uinfo);
+        $smarty->assign('unav',$upager->nav);
         $smarty->assign('umanage',$umanage);
         $smarty->display('admin/umanage.tpl');
 

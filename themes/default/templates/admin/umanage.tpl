@@ -58,36 +58,36 @@
                             </th>
                             </thead>
                             <tbody>
-                            {section name=index loop=$umanage }
+                            {section name=index loop=$uinfo }
                                     <tr>
                                         <td>
-                                            {$umanage[index].userName}
+                                            {$uinfo[index].userName}
                                         </td>
-                                        <td>{if $umanage[index].adminLevel eq 1 }
+                                        <td>{if $uinfo[index].adminLevel eq 1 }
                                             是
                                             {else}
                                             否
                                             {/if}
                                         </td>
-                                        <td>{$umanage[index].email}</td>
-                                        <td>{$umanage[index].addTime|date_format:'%Y-%m-%d'}</td>
+                                        <td>{$uinfo[index].email}</td>
+                                        <td>{$uinfo[index].addTime|date_format:'%Y-%m-%d'}</td>
                                         <td>
-                                            {if $umanage[index].validated eq 1}
+                                            {if $uinfo[index].validated eq 1}
                                                 是
                                             {else}
                                             否
                                             {/if}
                                         </td>
-                                        <td>{if $umanage[index].loginTime eq 0}
+                                        <td>{if $uinfo[index].loginTime eq 0}
                                                 还未登录过
                                             {else}
-                                            {$umanage[index].loginTime|date_format:'%Y-%m-%d'}</td>
+                                            {$uinfo[index].loginTime|date_format:'%Y-%m-%d'}</td>
                                             {/if}
                                         <td>
-                                            {if is_null($umanage[index].ip)}
+                                            {if is_null($uinfo[index].ip)}
                                                 还未登录过
                                             {else}
-                                            {$umanage[index].ip}
+                                            {$uinfo[index].ip}
                                             {/if}
                                         </td>
 
@@ -98,12 +98,23 @@
 
                             </tbody>
                         </table>
+                        <ul class="pagination" style="float: right">
+                            {$unav}
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <!-- end DataTables Example -->
     </div>
+    </div>
+        {*<div class="widget-content padded text-center">*}
+            {*<div class="page">*}
+                {*<ul class="pagination">*}
+                    {*{$unav}*}
+                {*</ul>*}
+            {*</div>*}
+        {*</div>*}
 </div>
 </body>
 
