@@ -29,11 +29,11 @@ class Pager{
 	}
 	/* page navigation */
 	private function GetNav(){
-		if(strrpos($this->href,'?')===false) $this->hrefC='?';
+		if(strrpos($this->href,'?')===false) $this->hrefC='/';
 		//first
-		if($this->pSum>1 && $this->pNO>1) $this->nav.='<li><a  class="icon" href="'.$this->href.$this->hrefC.'pNO=1" title="首页"><i class="icon-chevron-sign-left"></i></a></li>';
+		if($this->pSum>1 && $this->pNO>1) $this->nav.='<li><a  class="icon" href="'.$this->href.$this->hrefC.'1" title="首页"><i class="icon-chevron-sign-left"></i></a></li>';
 		//front
-		if($this->pNO>1) $this->nav.='<li><a class="icon" href="'.$this->href.$this->hrefC.'pNO='.($this->pNO-1).'" title="上一页"><i class="icon-long-arrow-left"></i></a></li>';
+		if($this->pNO>1) $this->nav.='<li><a class="icon" href="'.$this->href.$this->hrefC.''.($this->pNO-1).'" title="上一页"><i class="icon-long-arrow-left"></i></a></li>';
 		//num
 		if($this->pSum<=$this->pNavRN){
 			$this->PageNo(1,$this->pSum);
@@ -47,17 +47,18 @@ class Pager{
 			}
 		}
 		//next
-		if($this->pNO<$this->pSum) $this->nav.='<li><a class="icon" href="'.$this->href.$this->hrefC.'pNO='.($this->pNO+1).'" title="下一页"><i class="icon-long-arrow-right"></i></a></li>';
+		if($this->pNO<$this->pSum) $this->nav.='<li><a class="icon" href="'.$this->href.$this->hrefC.($this->pNO+1).'" title="下一页"><i class="icon-long-arrow-right"></i></a></li>';
 		//last
-		if($this->pSum>1 && $this->pNO<$this->pSum) $this->nav.='<li><a class="icon" href="'.$this->href.$this->hrefC.'pNO='.($this->pSum).'" title="尾页"><i class="icon-chevron-sign-right"></i></a></li>';
+		if($this->pSum>1 && $this->pNO<$this->pSum) $this->nav.='<li><a class="icon" href="'.$this->href.$this->hrefC.''.($this->pSum).'" title="尾页"><i class="icon-chevron-sign-right"></i></a></li>';
 	}
 	private function PageNo($first,$last){
 		for($i=$first;$i<=$last;$i++){
 			$this->pages[]=$i;
 			if($this->pNO==$i) $this->nav.='<li class="active disabled"><a>'.$i.'</a></li>';
-			else $this->nav.='<li><a  class="active" href="'.$this->href.$this->hrefC.'pNO='.$i.'" title="第'.$i.'页">'.$i.'</a></li>';
+			else $this->nav.='<li><a  class="active" href="'.$this->href.$this->hrefC.$i.'" title="第'.$i.'页">'.$i.'</a></li>';
 		}
-	}
+//        $this->nav.="一共{$this->pSum}页，每页显示{$this->pRN}个";
+    }
 	/* page nav arr */
 	public static function GetPageNav($sum,$pNO=1,$hrefPrefix='',$pRN=20,$pNavRN=5){
 		$pNO=$pNO<=0 ? 1 : $pNO;

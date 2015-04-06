@@ -57,14 +57,10 @@ switch($act){
         $where = " AND isOpen=1";
         $title='邀请码管理';
         $sql="select * from ".$tbInviteReg." WHERE addKeyUser = '".$userName."' ORDER BY id DESC";
-//        $pager = new Pager('select count(*) from sky_invite_reg;',$sql);
         $conutsql="SELECT count(*) FROM   ".$tbInviteReg." WHERE addKeyUser = '".$userName."' ORDER BY id DESC";
-//        $href = "index.php?do=admin&act=key";
-//        $keyinfo = $db->Dataset($sql);
-        $href="/admin/key";
-        $pager = new Pager($conutsql,$sql,$href,2,10,Val('pNO','GET',1));
+        $href=URL_ROOT."/admin/key";
+        $pager = new Pager($conutsql,$sql,$href,8,10,Val('pNO','GET',1));
         $keyinfo = $pager->data;
-//        if(!empty($act)) $href.='&act='.$act;
         $smarty=InitSmarty();
         $smarty->assign('user',$userName);
         $smarty->assign('keyinfo',$keyinfo);

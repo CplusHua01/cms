@@ -72,30 +72,30 @@
             <div class="nav-collapse">
                 <ul class="nav">
                     <li>
-                        <a href="main" {if $info eq null}
+                        <a href="{$url.root}/admin/main" {if $info eq null}
                             class="current"
                         {/if}
                                 ><span aria-hidden="true" class="se7en-home"></span>指示板</a>
                     </li>
-                    <li><a href="usermanage" {if $info eq 'usermanage'}
+                    <li><a href="{$url.root}/admin/usermanage" {if $info eq 'usermanage'}
                             class="current"
                                 {/if}
                                 >
                             <span aria-hidden="true" class="icon-group"></span>用户管理</a>
                     </li>
-                    <li><a href="key" {if $info eq 'key'}
+                    <li><a href="{$url.root}/admin/key" {if $info eq 'key'}
                             class="current"
                         {/if}
                                 >
                             <span aria-hidden="true" class="icon-rocket"></span>邀请码</a>
                     </li>
-                    <li><a href="time" {if $info eq 'time'}
+                    <li><a href="{$url.root}/admin/time" {if $info eq 'time'}
                             class="current"
                                 {/if}
                                 >
                             <span aria-hidden="true" class="icon-bug"></span>时间轴管理</a>
                     </li>
-                    <li><a href="filemanage" {if $info eq 'filename'}
+                    <li><a href="{$url.root}/admin/filemanage" {if $info eq 'filename'}
                             class="current"
                                 {/if}
                                 >
