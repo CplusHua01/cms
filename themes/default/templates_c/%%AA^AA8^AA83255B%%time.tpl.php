@@ -1,9 +1,15 @@
+<?php /* Smarty version 2.6.25, created on 2015-04-07 15:12:51
+         compiled from admin/time.tpl */ ?>
 
-{include file="admin/top.tpl"}
-{literal}
+<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "admin/top.tpl", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
+<?php echo '
 <script>
     var save = function() {
-        var aHTML = $('#summernote').code(); //save HTML If you need(aHTML: array).
+        var aHTML = $(\'#summernote\').code(); //save HTML If you need(aHTML: array).
 //        $.ajax({
             $.post("times",{content:aHTML},function(data){
                     alert("Data Loaded: " + data);
@@ -11,7 +17,8 @@
 //        })
     };
 </script>
-{/literal}
+'; ?>
+
 <div class="container-fluid main-content">
     <div class="page-title">
         <h1>

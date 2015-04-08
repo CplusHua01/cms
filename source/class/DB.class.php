@@ -137,7 +137,7 @@ class DB_Mysql implements IDataBase{
 	}
 	/* last id */
 	public function LastId(){
-		return mysql_insert_id();
+		return mysqli_insert_id($this->linkId);
 	}
 }
 ?>

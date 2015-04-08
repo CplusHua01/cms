@@ -75,7 +75,7 @@
                         <a href="{$url.root}/admin/main" {if $info eq null}
                             class="current"
                         {/if}
-                                ><span aria-hidden="true" class="se7en-home"></span>指示板</a>
+                                ><span aria-hidden="true" class="se7en-home"></span>首页</a>
                     </li>
                     <li><a href="{$url.root}/admin/usermanage" {if $info eq 'usermanage'}
                             class="current"

@@ -50,6 +50,8 @@ $tbInviteReg=$db->tbPrefix.'invite_reg';
 
 $tbUser=$db->tbPrefix.'user';
 
+//文章表
+$tbArticle=$db->tbPrefix.'article';
 
 $act=Val('act','GET');
 switch($act){
@@ -72,7 +74,7 @@ switch($act){
     case "newKey":
         $i=0;
         $NewKeyNum=Val('keyNewNum','POST');
-        while($i<=$NewKeyNum) {
+        while($i<$NewKeyNum) {
             $inviteKey = md5('ajdkSJHDa89awd898w98dadjawdaw' . $user->userId . time() . rand(100000, 999999));
             $sqlValue = array(
                 'inviteKey' => $inviteKey,
@@ -82,20 +84,38 @@ switch($act){
             $db->AutoExecute($tbInviteReg,$sqlValue);
             $i++;
         }
-        if($i-1 == $NewKeyNum){
+        if($i == $NewKeyNum){
             ShowSuccess('操作成功,生成 '.$NewKeyNum.' 个邀请码',URL_ROOT."/admin/key");
         }else{
             ShowError('操作失败，请联系管理员',URL_ROOT.'/admin/key');
         }
         break;
     case "time":
-
         $smarty=InitSmarty();
-
         $smarty->assign('info','time');
         $smarty->display('admin/time.tpl');
 
 
+
+        break;
+    case "times":
+        $data =$_POST['content'];
+        $datas=array(
+            'content' => $data,
+            'username'=>$userName,
+            'time'=>time()
+        );
+        if(!empty($data)){
+            $db->AutoExecute($tbArticle,$datas,'INSERT','where 1=1');
+            echo "发布成功";
+        }else{
+            echo "不能为空";
+        }
+        break;
+    case "show":
+        $sql="SELECT * FROM sky_article";
+        $cc = $db->Dataset($sql);
+        echo htmlspecialchars_decode($cc[0]['content']);
 
         break;
     case "usermanage":
@@ -111,7 +131,18 @@ switch($act){
         $smarty->assign('unav',$upager->nav);
         $smarty->assign('umanage',$umanage);
         $smarty->display('admin/umanage.tpl');
+        break;
+    case "deluser":
+//        print_r($_POST);
+        $deluser=Val("uuuuid",'POST');
+        echo $deluser;
+        $sql="DELETE  FROM ".$tbUser." WHERE userName='".$deluser."' LIMIT 1";
+        if($db->Execute($sql)){
+            ShowSuccess('删除用户 '.$deluser.' 成功!!',URL_ROOT.'/admin/usermanage');
+        }else{
+            ShowAError('删除用户 '.$deluser.' 失败,请联系管理员 sky@03sec.com',URL_ROOT.'/admin/usermanage');
 
+        }
         break;
     default:
         $UNUM=$user->getUserNum();

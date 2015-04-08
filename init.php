@@ -32,6 +32,8 @@ include(ROOT_PATH.'/source/function.php');
 include(ROOT_PATH.'/source/global.func.php');
 include(ROOT_PATH.'/source/class/User.class.php');
 include(ROOT_PATH.'/source/class/Pager.class.php');
+include(ROOT_PATH .'/source/class/Security.class.php');
+
 
 //显示设置
 $show=$config['show'];

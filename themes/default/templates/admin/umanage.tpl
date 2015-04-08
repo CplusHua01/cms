@@ -1,5 +1,18 @@
 {include file="admin/top.tpl"}
 <!-- End Navigation -->
+{*{literal}*}
+    {*<script>*}
+        {*function del(){*}
+            {*var aHTML = $('#uuuid').code();*}
+            {*$.post(*}
+                {*$.post("deluser",{uuuid:aHTML},function(data){*}
+                    {*alert("Data Loaded: " + data);*}
+                {*})*}
+            {*)*}
+        {*}*}
+    {*</script>*}
+{*{/literal}*}
+
 <div class="container-fluid main-content">
     <div class="page-title">
         <h1 align="center">
@@ -59,6 +72,7 @@
                             </thead>
                             <tbody>
                             {section name=index loop=$uinfo }
+                                <form action="deluser" method="post">
                                     <tr>
                                         <td>
                                             {$uinfo[index].userName}
@@ -90,10 +104,11 @@
                                             {$uinfo[index].ip}
                                             {/if}
                                         </td>
-
-                                        <td><button class="btn btn-xs btn-info-outline" onclick="alert('删除');" >删除</button></td>
+                                        <input type="hidden" name="uuuuid" value="{$uinfo[index].userName}">
+                                        <td><button class="btn btn-xs btn-info-outline" name="del" value="del">删除</button></td>
                                         <td><button class="btn btn-xs btn-info-outline" onclick="alert('修改');" >修改</button></td>
                                     </tr>
+                                </form>
                             {/section}
 
                             </tbody>
