@@ -91,26 +91,81 @@ switch($act){
         }
         break;
     case "time":
+        $title='时间轴文章管理';
+        $sql="SELECT * FROM ".$tbArticle." ORDER BY id DESC ";
+        $countsql="select count(*) from ".$tbArticle."  WHERE 1=1 ORDER BY id DESC";
+        $href=URL_ROOT."/admin/time";;
+        $tpager=new Pager($countsql,$sql,$href,20,10,Val('pNO','GET',1));
+//        $timesData=$db->Dataset($sql);
+        $tinfo=$tpager->data;
         $smarty=InitSmarty();
         $smarty->assign('info','time');
+        $smarty->assign('url',$url);
+        $smarty->assign('title',$title);
+        $smarty->assign('tnav',$tpager->nav);
+        $smarty->assign('timesData',$tinfo);
+        $smarty->display('admin/time_list.tpl');
+        break;
+    case "x_time":
+        $title ='时间轴文章修改';
+        $id=Val('id','GET');
+        $sql="SELECT * FROM ".$tbArticle." WHERE id='".$id."' LIMIT 0,1;";
+        $edit=$db->Dataset($sql);
+        $smarty=InitSmarty();
+        $smarty->assign('info','time');
+        $smarty->assign('edit',$edit);
         $smarty->display('admin/time.tpl');
-
-
+        break;
+    case "newTime":
+        $title='时间轴文章发布';
+        $smarty=InitSmarty();
+        $smarty->assign('info','time');
+        $smarty->assign('url',$url);
+        $smarty->assign('title',$title);
+        $smarty->display('admin/newTime.tpl');
+        break;
+    case "xx_times":
+        $data =$_POST['content'];
+        $id=Val('id','POST');
+        $title =Val('title','POST');
+        $datas=array(
+            'content' => CleanEvilHTML($data),
+            'username'=>$userName,
+            'time'=>time(),
+            'title'=>$title,
+        );
+        if(!empty($title)){
+            if(!empty($data)){
+                $db->AutoExecute($tbArticle,$datas,'UPDATE','1=1 AND id='.$id);
+                ShowSuccess('修改时间轴文章成功!',URL_ROOT."/admin/time",'返回');
+            }else{
+                ShowError('内容不能为空，请重新填写.','javascript:history.go(-1)','返回上一页');
+            }
+        }else{
+            ShowError('标题不能为空，请重新填写.','javascript:history.go(-1)','返回上一页');
+        }
 
         break;
     case "times":
         $data =$_POST['content'];
+        $title =Val('title','POST');
         $datas=array(
-            'content' => $data,
+            'content' => CleanEvilHTML($data),
             'username'=>$userName,
-            'time'=>time()
+            'time'=>time(),
+            'title'=>$title
         );
-        if(!empty($data)){
-            $db->AutoExecute($tbArticle,$datas,'INSERT','where 1=1');
-            echo "发布成功";
+        if(!empty($title)){
+            if(!empty($data)){
+                $db->AutoExecute($tbArticle,$datas,'INSERT',' 1=1');
+                ShowSuccess('发布时间轴文章成功!',URL_ROOT."/admin/time",'返回');
+            }else{
+                ShowError('内容不能为空，请重新填写.','javascript:history.go(-1)','返回上一页');
+            }
         }else{
-            echo "不能为空";
+            ShowError('标题不能为空，请重新填写.','javascript:history.go(-1)','返回上一页');
         }
+
         break;
     case "show":
         $sql="SELECT * FROM sky_article";
@@ -133,15 +188,12 @@ switch($act){
         $smarty->display('admin/umanage.tpl');
         break;
     case "deluser":
-//        print_r($_POST);
         $deluser=Val("uuuuid",'POST');
-        echo $deluser;
         $sql="DELETE  FROM ".$tbUser." WHERE userName='".$deluser."' LIMIT 1";
         if($db->Execute($sql)){
             ShowSuccess('删除用户 '.$deluser.' 成功!!',URL_ROOT.'/admin/usermanage');
         }else{
             ShowAError('删除用户 '.$deluser.' 失败,请联系管理员 sky@03sec.com',URL_ROOT.'/admin/usermanage');
-
         }
         break;
     default:

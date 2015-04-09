@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.25, created on 2015-04-06 14:58:01
+<?php /* Smarty version 2.6.25, created on 2015-04-09 16:41:50
          compiled from admin/top.tpl */ ?>
 <!DOCTYPE html>
 <html>
@@ -26,8 +26,8 @@ stylesheets/timepicker.css" media="all" rel="stylesheet" type="text/css" /><link
 stylesheets/colorpicker.css" media="all" rel="stylesheet" type="text/css" /><link href="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
 stylesheets/bootstrap-switch.css" media="all" rel="stylesheet" type="text/css" /><link href="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
 stylesheets/daterange-picker.css" media="all" rel="stylesheet" type="text/css" /><link href="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-stylesheets/typeahead.css" media="all" rel="stylesheet" type="text/css" /><link href="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-stylesheets/summernote.css" media="all" rel="stylesheet" type="text/css" /><link href="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
+stylesheets/typeahead.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
 stylesheets/pygments.css" media="all" rel="stylesheet" type="text/css" /><link href="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
 stylesheets/style.css" media="all" rel="stylesheet" type="text/css" /><link href="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
 stylesheets/color/green.css" media="all" rel="alternate stylesheet" title="green-theme" type="text/css" /><link href="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
@@ -50,24 +50,42 @@ javascripts/jquery.bootstrap.wizard.js" type="text/javascript"></script><script 
 javascripts/fullcalendar.min.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
 javascripts/gcal.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
 javascripts/jquery.dataTables.min.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-javascripts/datatable-editable.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-javascripts/jquery.easy-pie-chart.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-javascripts/excanvas.min.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-javascripts/jquery.isotope.min.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-javascripts/isotope_extras.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-javascripts/modernizr.custom.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-javascripts/jquery.fancybox.pack.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-javascripts/select2.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-javascripts/styleswitcher.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-javascripts/wysiwyg.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-javascripts/summernote.min.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-javascripts/jquery.inputmask.min.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-javascripts/jquery.validate.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-javascripts/bootstrap-fileupload.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-javascripts/bootstrap-datepicker.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-javascripts/bootstrap-timepicker.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-javascripts/bootstrap-colorpicker.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-javascripts/bootstrap-switch.min.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
+javascripts/datatable-editable.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
+javascripts/jquery.easy-pie-chart.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
+javascripts/excanvas.min.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
+javascripts/jquery.isotope.min.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
+javascripts/isotope_extras.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
+javascripts/modernizr.custom.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
+javascripts/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
+javascripts/select2.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
+javascripts/styleswitcher.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['root']; ?>
+/libs/kindeditor/kindeditor-all.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['root']; ?>
+/libs/kindeditor/lang/zh-CN.js" type="text/javascript"></script>
+        <script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
+javascripts/jquery.inputmask.min.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
+javascripts/jquery.validate.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
+javascripts/bootstrap-fileupload.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
+javascripts/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
+javascripts/bootstrap-timepicker.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
+javascripts/bootstrap-colorpicker.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
+javascripts/bootstrap-switch.min.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
 javascripts/typeahead.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
 javascripts/daterange-picker.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
 javascripts/date.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>

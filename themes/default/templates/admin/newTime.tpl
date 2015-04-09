@@ -3,45 +3,30 @@
 <div class="container-fluid main-content">
     <div class="page-title" align="center">
         <h1>
-            修改文章
+            发表时间轴文章
         </h1>
     </div>
     <div class="row">
         <div class="col-lg-12">
-            <form method="post" action="{$url.root}/admin/xx_times">
+            <form method="post" action="{$url.root}/admin/times">
             <div class="widget-container fluid-height">
                 <div class="heading">
                     <div class="col-md-7">
-                        {foreach name=outer item=contact from=$edit}
-
-                        <div class="col-md-2">
-                            <h3><i class="icon-4x icon-edit"></i>标题</h3>
+                        <div class="col-md-2 ">
+                            <h4 style="margin-top: 7px"><a href="javascript:history.go(-1)">返回上一页</a></h4>
                         </div>
-                        {foreach key=key item=item from=$contact}
-                            {if $key eq 'id'}
-                                <input type="hidden" name="id" value="{$item}">
-                            {/if}
-                        {/foreach}
+                        {*<div class="col-md-2">*}
+                            {*<h3><i class="icon-4x icon-edit"></i>标题</h3>*}
+                        {*</div>*}
                         <div class="col-md-7">
-                            {foreach key=key item=item from=$contact}
-                                {if $key eq 'title'}
-                                    <input name="title" class="form-control"  type="text" value="{$item}">
-                                {/if}
-                            {/foreach}
+                            <input name="title" class="form-control" placeholder="请输入标题" type="text">
                         </div>
                     </div>
                 </div>
                 <div class="widget-content padded">
                     <textarea id="content" name="content" style="width:700px;height:300px;">
-                                                    {foreach key=key item=item from=$contact}
-                                                        {if $key eq 'content'}
-                                                        {$item}
-                                                        {/if}
-                                                    {/foreach}
-
 
                     </textarea>
-                    {/foreach}
                     {literal}
                     <script type="text/javascript">
                         KindEditor.ready(function(K) {
@@ -56,7 +41,7 @@
                         });
                     </script>
                     {/literal}
-                    <button class="btn btn-lg btn-block btn-primary-outline">点击保存时间轴文章</button>
+                    <button class="btn btn-lg btn-block btn-primary-outline" onclick="save()">点击发布时间轴文章</button>
                 </div>
             </form>
             </div>

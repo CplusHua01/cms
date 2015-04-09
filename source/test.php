@@ -2,8 +2,8 @@
 /**
  * Created by www.03sec.com.
  * User: sky
- * Date: 15/4/3
- * Time: 10:49
+ * Date: 15/4/9
+ * Time: 11:55
  */
 header("Content-Type: text/html; charset=utf-8");
 /**
@@ -29,39 +29,19 @@ header("Content-Type: text/html; charset=utf-8");
  *　　　　　　　　　　┃┫┫　┃┫┫
  *　　　　　　　　　　┗┻┛　┗┻┛+ + + +
  */
-if(!defined('IN_OLDCMS')) die('Access Denied');
-if($user->userId<=0 ) ShowError('未登录或已超时',$url['login'],'重新登录');
-$userName=$user->userName;
-$db=DBConnect();
-$act=Val('act','GET');
-$artice=$db->tbPrefix.'article';
-switch($act){
-    case "sgk":
-        $title='社工库查询系统';
-        $smarty=InitSmarty();
-        $smarty->assign('is_admin',$user->adminLevel);
-        $smarty->assign('user',$userName);
-        $smarty->assign('title',$title);
-        $smarty->assign('info','');
-        $smarty->display('user/main.tpl');
-        break;
-    case "time":
-        $sql="SELECT * FROM ".$artice."";
-        $timeData=$db->Dataset($sql);
-        $title='时间轴';
-        $smarty=InitSmarty();
-        $smarty->assign('is_admin',$user->adminLevel);
-        $smarty->assign('title',$title);
-        $smarty->assign('info','time');
-        $smarty->assign('timeData',$timeData);
-        $smarty->display('user/time.tpl');
-        break;
-    default:
-        $title='用户管理面板';
-        $smarty=InitSmarty();
-        $smarty->assign('is_admin',$user->adminLevel);
-        $smarty->assign('user',$userName);
-        $smarty->assign('title',$title);
-        $smarty->assign('info','');
-        $smarty->display('user/main.tpl');
+
+if ($_FILES['file']['name']) {
+    if (!$_FILES['file']['error']) {
+        $name = md5(rand(100, 200));
+        $ext = explode('.', $_FILES['file']['name']);
+        $filename = $name . '.' . $ext[1];
+        $destination = '/upload/' . $filename; //change this directory
+        $location = $_FILES["file"]["tmp_name"];
+        move_uploaded_file($location, $destination);
+        echo 'http://test.yourdomain.al/upload/' . $filename;//change this URL
+    }
+    else
+    {
+        echo  $message = 'Ooops!  Your upload triggered the following error:  '.$_FILES['file']['error'];
+    }
 }
