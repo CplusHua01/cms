@@ -1,5 +1,7 @@
-<?php /* Smarty version 2.6.25, created on 2015-04-09 21:05:44
+<?php /* Smarty version 2.6.25, created on 2015-04-10 10:27:38
          compiled from user/time.tpl */ ?>
+<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'user/time.tpl', 12, false),)), $this); ?>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "user/top.tpl", 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;
@@ -38,7 +40,7 @@ $this->_sections['index']['last']       = ($this->_sections['index']['iteration'
 ?>
         <li>
             <div class="timeline-time">
-                <strong><?php echo $this->_tpl_vars['timeData'][$this->_sections['index']['index']]['time']; ?>
+                <strong><?php echo ((is_array($_tmp=$this->_tpl_vars['timeData'][$this->_sections['index']['index']]['time'])) ? $this->_run_mod_handler('date_format', true, $_tmp, '%Y-%m-%d') : smarty_modifier_date_format($_tmp, '%Y-%m-%d')); ?>
 </strong><?php echo $this->_tpl_vars['timeData'][$this->_sections['index']['index']]['username']; ?>
 
             </div>
@@ -48,10 +50,10 @@ $this->_sections['index']['last']       = ($this->_sections['index']['iteration'
                 </div>
             </div>
             <div class="timeline-content">
-                <h2>
+                <h1>
                     <?php echo $this->_tpl_vars['timeData'][$this->_sections['index']['index']]['title']; ?>
 
-                </h2>
+                </h1>
                 <p>
                     <?php echo $this->_tpl_vars['timeData'][$this->_sections['index']['index']]['content']; ?>
 

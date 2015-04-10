@@ -6,19 +6,16 @@
  * 如果您确定直接使用本程序，使用之前请仔细确认相关安全设置。
  *
  */
-
-require_once 'JSON.php';
+if(!defined('IN_OLDCMS')) die('Access Denied');
 require_once '../../../init.php';
+require_once 'JSON.php';
 $php_path = dirname(__FILE__) . '/';
 $php_url = dirname($_SERVER['PHP_SELF']) . '/';
-if(!defined('IN_OLDCMS')) die('Access Denied');
 if($user->userId<=0 ) ShowError('未登录或已超时',$url['login'],'重新登录');
 if($user->adminLevel != 1) ShowError('你没有访问后台的权限',$url['login'],'返回');
 //文件保存目录路径
-//$save_path = $php_path . '../attached/';
 $save_path = $php_path.'../../../upload/';
 //文件保存目录URL
-//$save_url = $php_url . '../attached/';
 $save_url =URL_ROOT.'/upload/';
 //定义允许上传的文件扩展名
 $ext_arr = array(

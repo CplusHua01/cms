@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.25, created on 2015-04-09 16:41:50
+<?php /* Smarty version 2.6.25, created on 2015-04-10 09:25:10
          compiled from admin/top.tpl */ ?>
 <!DOCTYPE html>
 <html>
@@ -154,7 +154,7 @@ images/avatar-male.jpg" /><?php echo $this->_tpl_vars['user']; ?>
                     </li>
                 </ul>
             </div>
-            <button class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="logo" href="main.tpl">03sec</a>
+            <button class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="logo" href="main">03sec</a>
         </div>
         <div class="container-fluid main-nav clearfix">
             <div class="nav-collapse">

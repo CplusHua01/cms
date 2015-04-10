@@ -31,16 +31,16 @@
                                         {$timesData[index].title}
                                     </td>
                                     <td>
-                                        {$timesData[index].time}
+                                        {$timesData[index].time|date_format:'%Y-%m-%d %H:%M:%S'}
                                     </td>
                                     <td class="hidden-xs">
                                         {$timesData[index].username}
                                     </td>
                                     <td class="actions">
                                         <div class="action-buttons">
-                                            <a class="table-actions" href="{$url.root}/user/time"><i class="icon-eye-open"></i></a>
-                                            <a class="table-actions" href="{$url.root}/admin/x_time/{$timesData[index].id}"><i class="icon-pencil"></i></a>
-                                            <a class="table-actions" href="#"><i class="icon-trash"></i></a></form>
+                                            <a class="table-actions" href="{$url.root}/user/time" target="_Blank"><i class="icon-eye-open"></i></a>
+                                            <a class="table-actions" href="{$url.root}/admin/x_time/{$timesData[index].id}" ><i class="icon-pencil"></i></a>
+                                            <a class="table-actions" href="{$url.root}/admin/delTime/{$timesData[index].id}"><i class="icon-trash"></i></a></form>
                                         </div>
                                     </td>
                                 </tr>

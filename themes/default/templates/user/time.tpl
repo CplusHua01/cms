@@ -9,7 +9,7 @@
         {section name=index loop=$timeData }
         <li>
             <div class="timeline-time">
-                <strong>{$timeData[index].time}</strong>{$timeData[index].username}
+                <strong>{$timeData[index].time|date_format:'%Y-%m-%d'}</strong>{$timeData[index].username}
             </div>
             <div class="timeline-icon">
                 <div class="bg-primary">
@@ -17,9 +17,9 @@
                 </div>
             </div>
             <div class="timeline-content">
-                <h2>
+                <h1>
                     {$timeData[index].title}
-                </h2>
+                </h1>
                 <p>
                     {$timeData[index].content}
 

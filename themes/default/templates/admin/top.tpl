@@ -86,7 +86,7 @@
                     </li>
                 </ul>
             </div>
-            <button class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="logo" href="main.tpl">03sec</a>
+            <button class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="logo" href="main">03sec</a>
         </div>
         <div class="container-fluid main-nav clearfix">
             <div class="nav-collapse">

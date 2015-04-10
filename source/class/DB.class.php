@@ -139,5 +139,11 @@ class DB_Mysql implements IDataBase{
 	public function LastId(){
 		return mysqli_insert_id($this->linkId);
 	}
+    /*delete*/
+    public function Delete($tables,$where){
+        $sql="DELETE FROM {$tables} WHERE {$where} ORDER BY id DESC ";
+        $this->Execute($sql);
+        return mysqli_affected_rows($this->linkId);
+    }
 }
 ?>
