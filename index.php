@@ -2,7 +2,7 @@
 /**
  * index.php 默认页
  * ----------------------------------------------------------------
- * OldCMS,site:http://www.oldcms.com
+ *
  */
 include('init.php');
 
