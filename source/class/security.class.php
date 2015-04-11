@@ -18,8 +18,6 @@
  */
 header("Content-Type: text/html; charset=utf-8");
 
-
-
 class security {
     /*
      * 加强版的过滤

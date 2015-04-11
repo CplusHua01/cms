@@ -6,5 +6,4 @@
  */
 if(!defined('IN_OLDCMS')) die('Access Denied');
 
-
 ?>

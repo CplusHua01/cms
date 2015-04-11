@@ -33,6 +33,7 @@ header("Content-Type: text/html; charset=utf-8");
 if(!defined('IN_OLDCMS')) die('Access Denied');
 if($user->userId<=0 ) ShowError('未登录或已超时',$url['login'],'重新登录');
 if($user->adminLevel != 1) ShowError('你没有访问后台的权限',$url['login'],'返回');
+define('IN_ADMIN',true);
 //本站创建时间
 $sitestart=strtotime("2015-3-31");
 $siterow = time();
@@ -183,6 +184,7 @@ switch($act){
 
         break;
     case "usermanage":
+        $title='网站用户管理';
         $sql="select * from ".$tbUser." ORDER BY id DESC";
         $ucountsql="SELECT count(*) FROM ".$tbUser." WHERE 1=1 ORDER BY id DESC";
         $href=URL_ROOT."/admin/usermanage";
@@ -192,6 +194,7 @@ switch($act){
         $smarty=InitSmarty();
         $smarty->assign('info','usermanage');
         $smarty->assign('uinfo',$uinfo);
+        $smarty->assign('title',$title);
         $smarty->assign('unav',$upager->nav);
         $smarty->assign('umanage',$umanage);
         $smarty->display('admin/umanage.tpl');

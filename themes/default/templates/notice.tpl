@@ -9,7 +9,7 @@
     <!--[if lt IE 8]><link rel="stylesheet" href="{$url.themePath}/templates/css/ie.css" type="text/css"><![endif]-->
     <link rel="stylesheet" href="{$url.themePath}/templates/css/style.css" type="text/css">
     <script type="text/javascript">
-        setTimeout("location.href='{$notice.turnto}'",1000);
+        setTimeout("location.href='{$notice.turnto}'",3000);
     </script>
 </head>
 <body>

@@ -33,6 +33,11 @@ include(ROOT_PATH.'/source/global.func.php');
 include(ROOT_PATH.'/source/class/User.class.php');
 include(ROOT_PATH.'/source/class/Pager.class.php');
 include(ROOT_PATH .'/source/class/Security.class.php');
+//include(ROOT_PATH .'/source/sgk/sgk.inc.php');
+include(ROOT_PATH .'/source/sgk/sgk.api.php');
+
+
+
 
 
 

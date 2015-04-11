@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.25, created on 2015-04-03 15:31:48
+<?php /* Smarty version 2.6.25, created on 2015-04-11 13:29:37
          compiled from user/top.tpl */ ?>
 <!DOCTYPE html>
 <html>
@@ -120,11 +120,13 @@ javascripts/respond.js" type="text/javascript"></script>
 images/avatar-male.jpg" /><?php echo $this->_tpl_vars['user']; ?>
 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">
+                            <li><a href="<?php echo $this->_tpl_vars['url']['root']; ?>
+/user/x_user">
                                     <i class="icon-user"></i>我的帐户</a>
                             </li>
-                            <li><a href="#">
-                                    <i class="icon-gear"></i>帐户设置</a>
+                            <li><a href="<?php echo $this->_tpl_vars['url']['root']; ?>
+/user/newAvatar">
+                                    <i class="icon-gear"></i>修改头像</a>
                             </li>
                             <li><a href="<?php echo $this->_tpl_vars['url']['root']; ?>
 /logout">

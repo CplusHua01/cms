@@ -33,7 +33,6 @@
               <input type="submit" value="&#xf054;">
           </div>
           <div class="form-options">
-
             {*<!--<label class="checkbox"><input type="checkbox"><span>同意《注册条款》</span></label>-->*}
               <p style="margin-top: 40px">
                   已经有账户了？ <a href="{$url.root}/login">立即登录</a>

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.25, created on 2015-04-10 10:25:37
+<?php /* Smarty version 2.6.25, created on 2015-04-11 14:49:06
          compiled from notice.tpl */ ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -17,7 +17,7 @@
 /templates/css/style.css" type="text/css">
     <script type="text/javascript">
         setTimeout("location.href='<?php echo $this->_tpl_vars['notice']['turnto']; ?>
-'",1000);
+'",3000);
     </script>
 </head>
 <body>

@@ -1,0 +1,92 @@
+/*input and submit */
+#keyword{
+    width: 40%;
+    height: 32px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+.cssInput{
+    border:1px solid #7A6F6F;
+    padding-left:0px;
+    border-radius:3px;
+    background-color:white;
+    outline:none;
+}
+input:focus {
+    outline: none;
+    border: #87C6F9 1px solid;
+    box-shadow: 0 0 8px #67a6d9;
+}
+.sub-red {
+    width: auto;
+    height: 32px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid transparent;
+    color: white;
+    font-size: 20px;
+    border-radius: 2px;
+    background: none repeat scroll 0% 0% #ee3333;
+    margin: 0px;
+    margin-bottom: 3px;
+}
+.sub-red:hover {
+    background: none repeat scroll 0% 0% #d01515;
+    zoom: 1;
+}
+.sub-info {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid transparent;
+    color: white;
+    font-size: 20px;
+    border-radius: 2px;
+    background: none repeat scroll 0% 0% #00aaee;
+    margin: 0px;
+    margin-bottom: 3px;
+}
+.sub-info:hover {
+    background: none repeat scroll 0% 0% #008cd0;
+    zoom: 1;
+}
+.sub-suc {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid transparent;
+    color: white;
+    font-size: 20px;
+    border-radius: 2px;
+    background: none repeat scroll 0% 0% #22cc77;
+    margin: 0px;
+    margin-bottom: 3px;
+}
+.sub-suc:hover {
+    background: none repeat scroll 0% 0% #04ae59;
+    zoom: 1;
+}

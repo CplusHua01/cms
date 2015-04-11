@@ -1,0 +1,87 @@
+/*-------------------------------
+*	Default dropdown styles
+--------------------------------*/
+*{
+	padding:0;
+}
+.tzSelect{
+	
+	/* This is the container of the new select element */
+	
+	height:34px;
+	display:inline-block;
+	min-width:200px;
+	position:relative;
+}
+
+.tzSelect .selectBox{
+
+	height:100%;
+	width:100%;
+	
+	/* Font settings */
+	
+	font:13px/34px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align:center;
+	color:#EEEEEE;
+	background: #0099CC;
+	cursor:pointer;
+	
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+
+.tzSelect .selectBox:hover,
+.tzSelect .selectBox.expanded{
+	color:#ffffff;
+}
+
+.tzSelect .dropDown{
+	position:absolute;
+	top:35px;
+	left:0;
+	width:100%;
+	list-style:none;
+	z-index:1000;
+	background:#ffffff;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	-moz-box-shadow:0 0 4px #111;
+	-webkit-box-shadow:0 0 4px #111;
+	box-shadow:0 0 4px #111;
+}
+
+.tzSelect li{
+	background-color:#ffffff;
+	cursor:pointer;
+	padding:6px;
+	text-align:center;
+}
+
+.tzSelect li:hover{
+	background-color:#CCFFFF;
+	color: #330066;
+}
+
+
+/*-----------------------------------------------------
+*	Additional styles for the apple product dropdown
+------------------------------------------------------*/
+
+
+.tzSelect .hasDetails{
+	border-width:0 1px 1px;
+}
+
+.tzSelect .hasDetails li{
+	height:85px;
+	position:relative;
+	padding:0;
+	text-align:left;
+	/* Again, using CSS3 multiple backgrounds with a fallback */
+	
+	background:red;
+
+}
