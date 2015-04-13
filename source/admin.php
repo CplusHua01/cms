@@ -67,6 +67,7 @@ switch($act){
         $smarty=InitSmarty();
         $smarty->assign('user',$userName);
         $smarty->assign('keyinfo',$keyinfo);
+        $smarty->assign('Av',$user->avatarImg);
         $smarty->assign('url',$url);
         $smarty->assign('title',$title);
         $smarty->assign('info',$act);
@@ -103,6 +104,7 @@ switch($act){
         $smarty=InitSmarty();
         $smarty->assign('info','time');
         $smarty->assign('url',$url);
+        $smarty->assign('Av',$user->avatarImg);
         $smarty->assign('title',$title);
         $smarty->assign('tnav',$tpager->nav);
         $smarty->assign('timesData',$tinfo);
@@ -115,6 +117,7 @@ switch($act){
         $edit=$db->Dataset($sql);
         $smarty=InitSmarty();
         $smarty->assign('info','time');
+        $smarty->assign('Av',$user->avatarImg);
         $smarty->assign('edit',$edit);
         $smarty->display('admin/time.tpl');
         break;
@@ -123,6 +126,7 @@ switch($act){
         $smarty=InitSmarty();
         $smarty->assign('info','time');
         $smarty->assign('url',$url);
+        $smarty->assign('Av',$user->avatarImg);
         $smarty->assign('title',$title);
         $smarty->display('admin/newTime.tpl');
         break;
@@ -181,7 +185,6 @@ switch($act){
         $sql="SELECT * FROM sky_article";
         $cc = $db->Dataset($sql);
         echo htmlspecialchars_decode($cc[0]['content']);
-
         break;
     case "usermanage":
         $title='网站用户管理';
@@ -194,6 +197,7 @@ switch($act){
         $smarty=InitSmarty();
         $smarty->assign('info','usermanage');
         $smarty->assign('uinfo',$uinfo);
+        $smarty->assign('Av',$user->avatarImg);
         $smarty->assign('title',$title);
         $smarty->assign('unav',$upager->nav);
         $smarty->assign('umanage',$umanage);
@@ -217,6 +221,7 @@ switch($act){
         $smarty->assign('url',$url);
         $smarty->assign('user',$userName);
         $smarty->assign('num',$UNUM);
+        $smarty->assign('Av',$user->avatarImg);
         $smarty->assign('sitedays',$sitedays);
         $smarty->assign('title',$title);
         $smarty->assign('info','');

@@ -71,7 +71,7 @@
                     </li>
 
                     <li class="dropdown user hidden-xs"><a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <img width="34" height="34" src="{$url.adminStyle}images/avatar-male.jpg" />{ $user}<b class="caret"></b></a>
+                            <img width="34" height="34" src="{$Av}" />{ $user}<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="{$url.root}/user/x_user">
                                     <i class="icon-user"></i>我的帐户</a>

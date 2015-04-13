@@ -34,7 +34,7 @@ if($user->userId<=0 ) ShowError('未登录或已超时',$url['login'],'重新登
 $userName=$user->userName;
 $db=DBConnect();
 $act=Val('act','GET');
-$artice=$db->tbPrefix.'article';
+$tbartice=$db->tbPrefix.'article';
 $tbUser=$db->tbPrefix.'user';
 
 switch($act){
@@ -64,11 +64,12 @@ switch($act){
 
         break;
     case "time":
-        $sql="SELECT * FROM ".$artice."";
+        $sql="SELECT * FROM ".$tbartice." ORDER BY id DESC ";
         $timeData=$db->Dataset($sql);
         $title='时间轴';
         $smarty=InitSmarty();
         $smarty->assign('is_admin',$user->adminLevel);
+        $smarty->assign('Av',$user->avatarImg);
         $smarty->assign('title',$title);
         $smarty->assign('info','time');
         $smarty->assign('timeData',$timeData);
@@ -124,6 +125,7 @@ switch($act){
             }
         }else{
             $smarty->assign('is_admin',$user->adminLevel);
+            $smarty->assign('Av',$user->avatarImg);
             $smarty->assign('title',$title);
             $smarty->assign('addTime',$u_data[0][addTime]);
             $smarty->assign('lastip',$u_data[0][ip]);
@@ -139,22 +141,87 @@ switch($act){
     case "newAvatar":
         $title='头像修改';
         $smarty=InitSmarty();
+        $smarty->assign('Av',$user->avatarImg);
         $smarty->assign('is_admin',$user->adminLevel);
+        $smarty->assign('Av_y',$user->avatarImg_b);
+
         $smarty->assign('title',$title);
         $smarty->assign('info','time');
         $smarty->assign('timeData',$timeData);
         $smarty->display('user/avatar.tpl');
         break;
     case "saveAvatar":
+        //实例化Image类，传入实例的值
+        $img = new Image($_FILES[upimg]);
+        //定义生成的图片名,防止重名
+        $imgName=mt_rand();
+        $imgName.=date("YmdHis",time());
 
+        $filetype = $_FILES['upimg']['type'];
+        //判断图片后缀
+        if($filetype == 'image/jpeg'){
+            $type = '.jpg';
+        }
+        if ($filetype == 'image/jpg') {
+            $type = '.jpg';
+        }
+        if ($filetype == 'image/pjpeg') {
+            $type = '.jpg';
+        }
+        if($filetype == 'image/gif'){
+            $type = '.gif';
+        }
+        if ($filetype == 'image/png'){
+            $type ='.png';
+        }
+        $imgName.=$type;
+        //进行上传图片
+        $img->Upload(AV_UPPATH.'/'.$imgName);
+        //判断是否有错误信息返回
+        if($img->error){
+            ShowError($img->error,URL_ROOT.'/user/newAvatar');
+            echo $img->error;
+        }else{
+            //进行头像缩略
+            if($img->Resize(AV_UPPATH.'/'.$imgName,60,60,AV_UPPATH.'/s1_'.$imgName)){
+                $avpath=AV_PATH.'s1_'.$imgName;
+                //再次生成一个200*200的图片。方便在面板展示
+                if($img->Resize(AV_UPPATH.'/'.$imgName,200,200,AV_UPPATH.'/s2_'.$imgName)){
+//                    echo '头像地址:'.$avpath;
+//                    echo "<br>";
+//                    echo '展示的200x200的地址:'.AV_PATH.'s2_'.$imgName;
+//                    echo "<br>";
+//                    echo '原图地址:'.AV_PATH.'/'.$imgName;
+                    //入库
+                    $data=array(
+                        'avatarImg'=>AV_PATH.'s1_'.$imgName,
+                        'avatarImg_b'=>AV_PATH.'s2_'.$imgName,
+                        'avatarImg_s'=>AV_PATH.'/'.$imgName
+                    );
+                    if($db->AutoExecute($tbUser,$data,'UPDATE',"userName='{$userName}'")){
+                        ShowSuccess('头像上传成功,重新登录后生效',URL_ROOT.'/logout','重新登录');
+//                        echo '入库成功！';
+                    }else{
+                        ShowError('头像上传失败!',URL_ROOT.'/user/newAvatar');
+//                        echo '入库失败';
+                    }
+                }else{
+//                    echo '缩略图片失败';
+                }
+            }else{
+//                echo '缩略图片失败';
+            }
+
+        }
         break;
-    case "xx_user":
-
+    case "test":
+        echo AV_UPPATH;
         break;
     default:
         $title='社工库查询系统';
         $smarty=InitSmarty();
         $smarty->assign('is_admin',$user->adminLevel);
+        $smarty->assign('Av',$user->avatarImg);
         $smarty->assign('user',$userName);
         $smarty->assign('title',$title);
         $smarty->assign('info','');

@@ -26,8 +26,9 @@ class User{
 				$this->adminLevel=intval($data['adminLevel']);
 				$this->userName=$data['userName'];
 				$avatarDir=URL_ROOT.'/upload/avatar/';
-				$this->avatarImg=empty($data['avatarImg']) ? $avatarDir.'avatar_50_50.gif' : $avatarDir.$data['avatarImg'];
-				$this->avatarImg_s=empty($data['avatarImg_s']) ? $avatarDir.'avatar_30_30.gif' : $avatarDir.$data['avatarImg_s'];
+				$this->avatarImg=empty($data['avatarImg']) ? $avatarDir.'s1_avatar.jpg' : $data['avatarImg'];
+				$this->avatarImg_s=empty($data['avatarImg_s']) ? $avatarDir.'avatar.jpg' : $data['avatarImg_s'];
+                $this->avatarImg_b=empty($data['avatarImg_b']) ? $avatarDir.'s2_avatar.jpg' : $data['avatarImg_b'];
 				$this->signature=$data['signature'];
 				$this->db->Execute("UPDATE ".$this->tbSession." SET updateTime='".time()."',expires=expires+".$this->expiryTime." WHERE ocKey='".$this->ocKey."'");
 			}

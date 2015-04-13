@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.25, created on 2015-04-11 13:29:37
+<?php /* Smarty version 2.6.25, created on 2015-04-13 17:14:31
          compiled from user/top.tpl */ ?>
 <!DOCTYPE html>
 <html>
@@ -46,8 +46,10 @@ javascripts/jquery.mousewheel.js" type="text/javascript"></script><script src="<
 javascripts/jquery.vmap.min.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['userStyle']; ?>
 javascripts/jquery.vmap.sampledata.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['userStyle']; ?>
 javascripts/jquery.vmap.world.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['userStyle']; ?>
-javascripts/jquery.bootstrap.wizard.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['userStyle']; ?>
-javascripts/fullcalendar.min.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['userStyle']; ?>
+javascripts/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['userStyle']; ?>
+javascripts/fullcalendar.min.js" type="text/javascript"></script>
+    <script src="<?php echo $this->_tpl_vars['url']['userStyle']; ?>
 javascripts/gcal.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['userStyle']; ?>
 javascripts/jquery.dataTables.min.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['userStyle']; ?>
 javascripts/datatable-editable.js" type="text/javascript"></script><script src="<?php echo $this->_tpl_vars['url']['userStyle']; ?>
@@ -116,8 +118,8 @@ javascripts/respond.js" type="text/javascript"></script>
                         </ul>
                     </li>
                     <li class="dropdown user hidden-xs"><a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <img width="34" height="34" src="<?php echo $this->_tpl_vars['url']['userStyle']; ?>
-images/avatar-male.jpg" /><?php echo $this->_tpl_vars['user']; ?>
+                            <img width="34" height="34" src="<?php echo $this->_tpl_vars['Av']; ?>
+" /><?php echo $this->_tpl_vars['user']; ?>
 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="<?php echo $this->_tpl_vars['url']['root']; ?>

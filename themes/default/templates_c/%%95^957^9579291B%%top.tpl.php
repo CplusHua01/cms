@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.25, created on 2015-04-11 13:39:24
+<?php /* Smarty version 2.6.25, created on 2015-04-13 17:03:08
          compiled from admin/top.tpl */ ?>
 <!DOCTYPE html>
 <html>
@@ -136,8 +136,8 @@ javascripts/respond.js" type="text/javascript"></script>
                     </li>
 
                     <li class="dropdown user hidden-xs"><a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <img width="34" height="34" src="<?php echo $this->_tpl_vars['url']['adminStyle']; ?>
-images/avatar-male.jpg" /><?php echo $this->_tpl_vars['user']; ?>
+                            <img width="34" height="34" src="<?php echo $this->_tpl_vars['Av']; ?>
+" /><?php echo $this->_tpl_vars['user']; ?>
 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="<?php echo $this->_tpl_vars['url']['root']; ?>

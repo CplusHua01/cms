@@ -22,6 +22,9 @@ define('REGISTER',$config['register']);
 define('MAIL_AUTH',$config['mailauth']);
 define('FILE_PATH',$config['filepath']);
 define('FILE_PREFIX',$config['fileprefix']);
+define('AV_UPPATH',ROOT_PATH.$config['uppath'].'/avatar');
+define('IMG_UPPATH',ROOT_PATH.$config['uppath']);
+define('AV_PATH',URL_ROOT.$config['uppath'].'avatar/');
 /* 模板判断 */
 $template=$config['template'];
 define('TEMPLATE_PATH',ROOT_PATH.'/themes/'.$template);
@@ -33,11 +36,8 @@ include(ROOT_PATH.'/source/global.func.php');
 include(ROOT_PATH.'/source/class/User.class.php');
 include(ROOT_PATH.'/source/class/Pager.class.php');
 include(ROOT_PATH .'/source/class/Security.class.php');
-//include(ROOT_PATH .'/source/sgk/sgk.inc.php');
+include(ROOT_PATH .'/source/class/Image.class.php');
 include(ROOT_PATH .'/source/sgk/sgk.api.php');
-
-
-
 
 
 

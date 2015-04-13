@@ -16,7 +16,8 @@ if($user->userId<=0 ) ShowError('未登录或已超时',$url['login'],'重新登
 if($user->adminLevel != 1) ShowError('你没有访问后台的权限',$url['login'],'返回');
 //文件保存目录路径
 //$save_path = $php_path . '../attached/';
-$save_path = $php_path.'../../../upload/';
+//$save_path = $php_path.'../../../upload/';
+$save_path = IMG_UPPATH;
 //文件保存目录URL
 //$save_url = $php_url . '../attached/';
 $save_url =URL_ROOT.'/upload/';

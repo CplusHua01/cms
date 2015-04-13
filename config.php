@@ -65,4 +65,7 @@ $config['mail']=array(
 $config['timezone']		='Asia/Shanghai';		//时区
 $config['expires']		=3600;					//过期时长(秒)
 $config['debug']		=true;					//调试模式(是否显示程序、数据库等错误)
+
+/* 增加的配置 */
+$config['uppath']       ='/upload/';
 ?>
