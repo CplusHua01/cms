@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.25, created on 2015-04-10 10:29:08
+<?php /* Smarty version 2.6.25, created on 2015-04-14 13:41:43
          compiled from admin/time_list.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'admin/time_list.tpl', 34, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'admin/time_list.tpl', 37, false),)), $this); ?>
 
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "admin/top.tpl", 'smarty_include_vars' => array()));
@@ -17,6 +17,9 @@ unset($_smarty_tpl_vars);
             <div class="row">
                 <div class="col-lg-12">
                     <div class="widget-container fluid-height clearfix">
+                        <div class="heading">
+                            <i class="icon-time"></i>管理时间轴文章
+                        </div>
                         <div class="widget-content padded clearfix">
                             <table class="table table-bordered table-striped table-hover">
                                 <thead>

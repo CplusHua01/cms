@@ -8,6 +8,7 @@
     </div>
     <div class="row">
         <div class="col-lg-12">
+
             <form method="post" action="{$url.root}/admin/xx_times">
             <div class="widget-container fluid-height">
                 <div class="heading">

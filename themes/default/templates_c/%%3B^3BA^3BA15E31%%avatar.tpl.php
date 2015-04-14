@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.25, created on 2015-04-13 17:23:56
+<?php /* Smarty version 2.6.25, created on 2015-04-14 14:49:54
          compiled from user/avatar.tpl */ ?>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "user/top.tpl", 'smarty_include_vars' => array()));
@@ -18,17 +18,25 @@ javascripts/fullAvatarEditor.js"></script><div class="container-fluid main-conte
         <div class="col-md-12">
             <div class="widget-container">
                 <div class="widget-content padded">
-                                                                                                                                    <div class="col-md-2">
-                        a
+                    <div class="heading">
+                        <i class="icon-picture"></i>头像修改
                     </div>
                     <div class="col-md-2">
-                        <img src="<?php echo $this->_tpl_vars['Av_y']; ?>
-">
+
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-3">
+                        <img src="<?php echo $this->_tpl_vars['Av_y']; ?>
+" width="200px" height="200px">
+
+                    </div>
+
+                    <div class="col-md-5">
+                                                                                                                        <div style="height: 120px">
+                        <h1>:-）</h1>
+                        </div>
                         <form enctype="multipart/form-data" method="post" name="upform" action="saveAvatar">
                             <div class="form-group">
-                                <div class="col-md-4">
+                                <div class="col-md-pull-4">
                                     <div class="fileupload fileupload-new" data-provides="fileupload">
                                         <div class="input-group">
                                             <div class="form-control">
@@ -39,15 +47,15 @@ javascripts/fullAvatarEditor.js"></script><div class="container-fluid main-conte
                                             </div>
                                         </div>
                                     </div>
+                                    <button class="btn btn-lg btn-block btn-primary">保存头像</button>
                                 </div>
                             </div>
-                            <button>保存修改</button>
                         </form>
                     </div>
-
-
                 </div>
-                    </div>
+            </div>
+        </div>
     </div>
+    </body>
 
-</div>
+    </html>

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.25, created on 2015-04-13 17:03:08
+<?php /* Smarty version 2.6.25, created on 2015-04-14 13:34:23
          compiled from admin/top.tpl */ ?>
 <!DOCTYPE html>
 <html>
@@ -146,7 +146,7 @@ javascripts/respond.js" type="text/javascript"></script>
                             </li>
                             <li><a href="<?php echo $this->_tpl_vars['url']['root']; ?>
 /user/newAvatar">
-                                    <i class="icon-gear"></i>帐户设置</a>
+                                    <i class="icon-gear"></i>修改头像</a>
                             </li>
                             <li><a href="<?php echo $this->_tpl_vars['url']['root']; ?>
 /logout">

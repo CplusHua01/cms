@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.25, created on 2015-04-09 23:20:36
+<?php /* Smarty version 2.6.25, created on 2015-04-14 13:41:46
          compiled from admin/key.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'admin/key.tpl', 59, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'admin/key.tpl', 63, false),)), $this); ?>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "admin/top.tpl", 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;
@@ -18,7 +18,11 @@ unset($_smarty_tpl_vars);
         <div class="row">
             <div class="col-lg-12">
                 <div class="widget-container fluid-height clearfix">
+
                     <div class="form-group">
+                        <div class="heading">
+                            <i class="icon-key"></i>邀请码管理
+                        </div>
                         <label class="control-label col-md-3"></label>
                         <div class="col-md-7" style="margin-top: 7px">
                             <form action="newKey" method="post">

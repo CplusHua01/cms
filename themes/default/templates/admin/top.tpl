@@ -77,7 +77,7 @@
                                     <i class="icon-user"></i>我的帐户</a>
                             </li>
                             <li><a href="{$url.root}/user/newAvatar">
-                                    <i class="icon-gear"></i>帐户设置</a>
+                                    <i class="icon-gear"></i>修改头像</a>
                             </li>
                             <li><a href="{$url.root}/logout">
                                     <i class="icon-signout"></i>注销</a>

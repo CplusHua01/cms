@@ -10,21 +10,28 @@
         <div class="col-md-12">
             <div class="widget-container">
                 <div class="widget-content padded">
-                    {*<form enctype="multipart/form-data" method="post" name="upform" action="saveAvatar">*}
-                        {*上传文件:*}
-                        {*<input name="upimg" type="file">*}
-                        {*<input type="submit" value="上传"><br>*}
-                    {*</form>*}
-                    <div class="col-md-2">
-                        a
+                    <div class="heading">
+                        <i class="icon-picture"></i>头像修改
                     </div>
                     <div class="col-md-2">
-                        <img src="{$Av_y}">
+
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-3">
+                        <img src="{$Av_y}" width="200px" height="200px">
+
+                    </div>
+
+                    <div class="col-md-5">
+                        {*<input>*}
+                        {*<input>*}
+                        {*<input>*}
+                        {*<input><input><input><input><input><input><input><input><input><input><input><input>*}
+                        <div style="height: 120px">
+                        <h1>:-）</h1>
+                        </div>
                         <form enctype="multipart/form-data" method="post" name="upform" action="saveAvatar">
                             <div class="form-group">
-                                <div class="col-md-4">
+                                <div class="col-md-pull-4">
                                     <div class="fileupload fileupload-new" data-provides="fileupload">
                                         <div class="input-group">
                                             <div class="form-control">
@@ -35,16 +42,15 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <button class="btn btn-lg btn-block btn-primary">保存头像</button>
                                 </div>
                             </div>
-                            <button>保存修改</button>
                         </form>
                     </div>
-
-
                 </div>
-            {*</div>*}
+            </div>
         </div>
     </div>
+    </body>
 
-</div>
+    </html>

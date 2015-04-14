@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.25, created on 2015-04-08 16:00:12
+<?php /* Smarty version 2.6.25, created on 2015-04-14 13:41:49
          compiled from admin/umanage.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'admin/umanage.tpl', 87, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'admin/umanage.tpl', 77, false),)), $this); ?>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "admin/top.tpl", 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;
@@ -21,11 +21,9 @@ unset($_smarty_tpl_vars);
             <div class="widget-container fluid-height clearfix">
                 <div class="form-group">
                     <label class="control-label col-md-3"></label>
-                    <div class="col-md-7" style="margin-top: 7px">
-                        
-                                                                                                                                                                    
-
-                                                    
+                    <div class="heading">
+                        <i class="icon-group"></i>网站用户管理
+                    </div>
                     </div>
                     <div class="widget-content padded clearfix">
                         <table class="table table-bordered  table-hover">

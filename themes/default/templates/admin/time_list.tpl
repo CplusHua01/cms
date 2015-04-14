@@ -9,6 +9,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="widget-container fluid-height clearfix">
+                        <div class="heading">
+                            <i class="icon-time"></i>管理时间轴文章
+                        </div>
                         <div class="widget-content padded clearfix">
                             <table class="table table-bordered table-striped table-hover">
                                 <thead>

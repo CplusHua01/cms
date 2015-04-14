@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.25, created on 2015-04-09 22:33:28
+<?php /* Smarty version 2.6.25, created on 2015-04-14 13:41:39
          compiled from admin/time.tpl */ ?>
 
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
@@ -14,6 +14,7 @@ unset($_smarty_tpl_vars);
     </div>
     <div class="row">
         <div class="col-lg-12">
+
             <form method="post" action="<?php echo $this->_tpl_vars['url']['root']; ?>
 /admin/xx_times">
             <div class="widget-container fluid-height">

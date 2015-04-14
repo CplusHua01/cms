@@ -25,19 +25,9 @@
             <div class="widget-container fluid-height clearfix">
                 <div class="form-group">
                     <label class="control-label col-md-3"></label>
-                    <div class="col-md-7" style="margin-top: 7px">
-                        {*<form action="newKey" method="post">*}
-
-                            {*<div class="col-md-10">*}
-                                {*<div class="input-group">*}
-                                    {*<input class="form-control" type="text" name="keyNewNum" placeholder="请输入要生成的邀请码的个数，建议一次不超过100个"onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d.]/g,''))" maxlength="3">*}
-                                    {*<span class="input-group-btn"><button class="btn btn-primary-outline" type="submit">一键生成邀请码</button></span></input>*}
-                                {*</div>*}
-
-
-                            {*</div>*}
-                        {*</form>*}
-
+                    <div class="heading">
+                        <i class="icon-group"></i>网站用户管理
+                    </div>
                     </div>
                     <div class="widget-content padded clearfix">
                         <table class="table table-bordered  table-hover">

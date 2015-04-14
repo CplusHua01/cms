@@ -10,7 +10,11 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="widget-container fluid-height clearfix">
+
                     <div class="form-group">
+                        <div class="heading">
+                            <i class="icon-key"></i>邀请码管理
+                        </div>
                         <label class="control-label col-md-3"></label>
                         <div class="col-md-7" style="margin-top: 7px">
                             <form action="newKey" method="post">
