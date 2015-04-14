@@ -31,7 +31,8 @@ header("Content-Type: text/html; charset=utf-8");
  */
 //社工库服务器配置信息
 if(!defined('IN_OLDCMS')) die('Access Denied');
-define('DB_HOST','127.0.0.1');        //社工库服务器IP
+//define('DB_HOST','127.0.0.1');        //社工库服务器IP
+define('DB_HOST','10.0.117.12');        //社工库服务器IP
 define('DB_USER','root');                //社工库服务器 mysql 的user（切记开启允许改用户外联，如果是本机请忽略）
 define('DB_PASS','25251325');             //社工库服务器 mysql 的password
 define('DB_DATABASE','sgk');            //社工库服务器所在的数据库名

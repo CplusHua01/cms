@@ -39,11 +39,13 @@ $tbUser=$db->tbPrefix.'user';
 
 switch($act){
     case "sgk":
+
         require_once('sgk/sgk.inc.php');
         require_once('sgk/sgk.api.php');
         require_once('class/Security.class.php');
         $mod = $_POST["mode"];//取得搜索模式
         $md5 = $_POST["she"]; //取得关键字
+
         if ($md5 == "搜") {//普通搜素
             $keyToSearch = security::sky_g($_POST["key"]);
         }
@@ -53,15 +55,44 @@ switch($act){
         if ($md5 == "MD5^32") {//md532位搜索
             $keyToSearch = md5(security::sky_g($_POST["key"]));
         }
-        $cl = new SphinxClient();
-        $cl->SetServer('10.0.117.10', 9312);                //设置spinx的服务器地址和端口
-        $cl->SetArrayResult(true);                                  //设置 显示结果集方式
-        $cl->SetLimits(0, 1000);                           //同sql语句中的LIMIT
-        $cl->SetSortMode(SPH_SORT_RELEVANCE);                       //设置默认按照相关性排序
-        $cl->SetMatchMode($_POST['mode']);
+        $sp = new SphinxClient();
+        $sp->SetServer('10.0.117.12', 9312);                //设置spinx的服务器地址和端口
+        $sp->SetArrayResult(true);                                  //设置 显示结果集方式
+        $sp->SetLimits(0, 1000);                           //同sql语句中的LIMIT
+        $sp->SetSortMode(SPH_SORT_RELEVANCE);                       //设置默认按照相关性排序
+        $sp->SetMatchMode($mod);
         if ($keyToSearch != " ")                   // 如果关键字为空 不执行 否则程序出错
-            $result = $cl->Query($keyToSearch, "*");                 //执行搜索
-
+            $result = $sp->Query($keyToSearch, "*");                 //执行搜索
+        if(is_array($result['matches'])){
+            $sql_id = array();
+            foreach ($result['matches'] as $k => $v) {
+                $sql_id[$i] = $v["id"];
+                $i++;
+            }
+            $sql_query = array();
+            foreach ($sql_id as $id) {
+                $sql = "select * from shegongku  where id =" . $id;
+                $sql_query[$i] = $sql;
+                $i++;
+            }
+            function dis_td($sql,$sgk_con)
+            {
+                $result = mysqli_query($sgk_con,$sql);
+                while ($row = mysqli_fetch_assoc($result)){
+                    print_r($row);
+                }
+                mysqli_free_result($result);
+//            while ($row = mysql_fetch_assoc($result)) {
+//                echo "<tr> <td>" . $row["source"] .
+//                    "</td> <td>" . $row["username"] . "</td> <td>" . $row["password"] . "</td> <td>" . $row["email"] .
+//                    "</td> <td>" . $row["realname"] . "</td> <td>" . $row["mobile"] . "</td> <td>" . $row["tel"] .
+//                    "</td> <td>" . $row["idcard"] . "</td> <td>" . $row["qq"] . "</td> <td>" . $row["others"] . " </td> </tr>";
+//            }
+            }
+            foreach ($sql_query as $sql) {
+                dis_td($sql,$con);
+            }
+        }
         break;
     case "time":
         $sql="SELECT * FROM ".$tbartice." ORDER BY id DESC ";
