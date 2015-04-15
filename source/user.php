@@ -40,6 +40,12 @@ $tbUser=$db->tbPrefix.'user';
 switch($act){
     case "sgk":
 
+
+
+
+
+
+
         require_once('sgk/sgk.inc.php');
         require_once('sgk/sgk.api.php');
         require_once('class/Security.class.php');
@@ -56,7 +62,7 @@ switch($act){
             $keyToSearch = md5(security::sky_g($_POST["key"]));
         }
         $sp = new SphinxClient();
-        $sp->SetServer('10.0.117.12', 9312);                //设置spinx的服务器地址和端口
+        $sp->SetServer('10.211.55.14', 9312);                //设置spinx的服务器地址和端口
         $sp->SetArrayResult(true);                                  //设置 显示结果集方式
         $sp->SetLimits(0, 1000);                           //同sql语句中的LIMIT
         $sp->SetSortMode(SPH_SORT_RELEVANCE);                       //设置默认按照相关性排序
@@ -91,15 +97,31 @@ switch($act){
             }
 
                 $smarty = InitSmarty();
-                foreach ($sql_query as $sql) {
+                //print_r($sql_query);exit;
+//                print_r(dis_td($sql,$con));
+            $i=0;
+            $arr=array();
+            foreach ($sql_query as $sql) {
                     $sgk_data = dis_td($sql, $con);
-//                    print_r($sgk_data[0][5]);
+                    array_push($arr,$sgk_data);
+                    $i++;
                 }
-//                $smarty->assign('data', $sgk_data);
-//                $smarty->display('user/sgk_data.tpl');
+                $smarty->assign('datas',$arr);
+                $smarty->display('user/sgk_data.tpl');
             }
 
         break;
+
+
+
+
+
+
+
+
+
+
+
     case "time":
         $sql="SELECT * FROM ".$tbartice." ORDER BY id DESC ";
         $timeData=$db->Dataset($sql);

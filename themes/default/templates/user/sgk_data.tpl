@@ -43,50 +43,25 @@
                     </th>
                     </thead>
                     <tbody >
-                    <tr>
+                    {section loop=$datas name=key}
+                    <tr align="center">
                         <td class="col-md-1" >
-                            初雪
+                        {$datas[key].username}
                         </td>
                         <td class="col-md-2" >
-                            客服
+                        {$datas[key].password}
                         </td>
                         <td class="col-md-2" >
-                            robert@gmail.com
+                        {$datas[key].email}
                         </td>
                         <td class="col-md-2" >
-                            8-15-2013
+                            {$datas[key].source}
                         </td>
                         <td class="col-md-7" >
-                            United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United Kingdom
+                        {$datas[key].others}
                         </td>
                     </tr>
-
-                        <tr>
-                            <td class="col-md-1" >
-                                a
-                            </td>
-                            <td class="col-md-2" >
-                                客服
-                            </td>
-                            <td class="col-md-2" >
-                                robert@gmail.com
-                            </td>
-                            <td class="col-md-2" >
-                                8-15-2013
-                            </td>
-                            <td class="col-md-7" >
-                                United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United United Kingdom
-                            </td>
-                        </tr>
-
-
-                    {section name=index loop=$data }
-                        {$data[index].username}
                     {/section}
-
-
-
-
                     </tbody>
                 </table>
             </div>

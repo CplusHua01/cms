@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7172393d-4d61-4016-882c-e1f555b34da3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/default/templates/user/sgk_data.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/sgk/sgk.inc.php" afterPath="$PROJECT_DIR$/source/sgk/sgk.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/templates_c/%%62^62F^62F4D13D%%main.tpl.php" afterPath="$PROJECT_DIR$/themes/default/templates_c/%%62^62F^62F4D13D%%main.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/templates/user/main.tpl" afterPath="$PROJECT_DIR$/themes/default/templates/user/main.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/templates/user/sgk_data.tpl" afterPath="$PROJECT_DIR$/themes/default/templates/user/sgk_data.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/user.php" afterPath="$PROJECT_DIR$/source/user.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -48,115 +49,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64874554" vertical-offset="958" max-vertical-offset="4020">
-              <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+            <state vertical-scroll-proportion="-14.958333" vertical-offset="1216" max-vertical-offset="4350">
+              <caret line="105" column="38" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
               <folding>
-                <marker date="1429078323000" expanded="true" signature="2344:2379" placeholder="select * fro..shegongku..." />
-                <marker date="1429078323000" expanded="true" signature="3304:3348" placeholder="SELECT * FRO.._tbartice ORDER..." />
-                <marker date="1429078323000" expanded="true" signature="3790:3843" placeholder="SELECT * FRO..sky_user..." />
-                <marker date="1429078323000" expanded="true" signature="3936:4004" placeholder="SELECT addKe..sky_invite_reg..." />
+                <marker date="1429088697000" expanded="true" signature="2351:2386" placeholder="select * fro..shegongku..." />
+                <marker date="1429088697000" expanded="true" signature="3469:3513" placeholder="SELECT * FRO.._tbartice ORDER..." />
+                <marker date="1429088697000" expanded="true" signature="3955:4008" placeholder="SELECT * FRO..sky_user..." />
+                <marker date="1429088697000" expanded="true" signature="4101:4169" placeholder="SELECT addKe..sky_invite_reg..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DB.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/class/DB.class.php">
+      <file leaf-file-name="time.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/templates/user/time.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.833334" vertical-offset="757" max-vertical-offset="2265">
-              <caret line="92" column="35" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="35" />
-              <folding>
-                <marker date="1428741305000" expanded="true" signature="1992:2099" placeholder="INSERT INTO ..." />
-                <marker date="1428741305000" expanded="true" signature="3823:3876" placeholder="DELETE FROM ..." />
-              </folding>
+            <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="555">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sgk_data.tpl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sgk_data.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/default/templates/user/sgk_data.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="16.791666" vertical-offset="1648" max-vertical-offset="2505">
-              <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="key.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/default/templates/admin/key.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.083333" vertical-offset="613" max-vertical-offset="1470">
-              <caret line="57" column="72" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="top.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/default/templates/user/top.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="27.5" vertical-offset="870" max-vertical-offset="2445">
-              <caret line="14" column="2671" selection-start-line="9" selection-start-column="4" selection-end-line="14" selection-end-column="2671" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/default/templates/user/main.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="570">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="so.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ok/sgk3/include/so.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="480" max-vertical-offset="2340">
-              <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-              <folding>
-                <marker date="1418963911000" expanded="true" signature="734:760" placeholder="select count..data_..." />
-                <marker date="1418963911000" expanded="true" signature="2307:5221" placeholder="..." />
-                <marker date="1418963911000" expanded="true" signature="2314:2635" placeholder="..." />
-                <marker date="1418963911000" expanded="true" signature="2642:5213" placeholder="..." />
-                <marker date="1418963911000" expanded="true" signature="2665:3791" placeholder="..." />
-                <marker date="1418963911000" expanded="true" signature="2675:3784" placeholder="..." />
-                <marker date="1418963911000" expanded="true" signature="2737:3773" placeholder="..." />
-                <marker date="1418963911000" expanded="true" signature="2881:3289" placeholder="..." />
-                <marker date="1418963911000" expanded="true" signature="3830:4407" placeholder="..." />
-                <marker date="1418963911000" expanded="true" signature="3899:4388" placeholder="..." />
-                <marker date="1418963911000" expanded="true" signature="4092:4382" placeholder="..." />
-                <marker date="1418963911000" expanded="true" signature="4451:5079" placeholder="..." />
-                <marker date="1418963911000" expanded="true" signature="4507:5073" placeholder="..." />
-                <marker date="1418963911000" expanded="true" signature="4521:5068" placeholder="..." />
-                <marker date="1418963911000" expanded="false" signature="4547:4565" placeholder="..." />
-                <marker date="1418963911000" expanded="false" signature="4601:4619" placeholder="..." />
-                <marker date="1418963911000" expanded="false" signature="4655:4673" placeholder="..." />
-                <marker date="1418963911000" expanded="false" signature="4708:4726" placeholder="..." />
-                <marker date="1418963911000" expanded="false" signature="4761:4779" placeholder="..." />
-                <marker date="1418963911000" expanded="false" signature="4814:4832" placeholder="..." />
-                <marker date="1418963911000" expanded="false" signature="4867:4885" placeholder="..." />
-                <marker date="1418963911000" expanded="false" signature="4920:4938" placeholder="..." />
-                <marker date="1418963911000" expanded="false" signature="4974:4992" placeholder="..." />
-                <marker date="1418963911000" expanded="false" signature="5027:5045" placeholder="..." />
-                <marker date="1418963911000" expanded="true" signature="5553:5600" placeholder="select * fro..data_..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sgk.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/sgk/sgk.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="795">
-              <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.6438792" vertical-offset="1335" max-vertical-offset="2055">
+              <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -165,6 +87,11 @@
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="iiusky &lt;iiusky@126.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -195,10 +122,11 @@
         <option value="$PROJECT_DIR$/source/sgk.php" />
         <option value="$PROJECT_DIR$/source/sgk/sgk.inc.php" />
         <option value="/HTML Fragment (user.php:2732).html" />
-        <option value="$PROJECT_DIR$/themes/default/templates/user/sgk_data.tpl" />
         <option value="$PROJECT_DIR$/source/class/sgk.class.php" />
         <option value="$PROJECT_DIR$/source/class/SGK.class.php" />
+        <option value="$PROJECT_DIR$/themes/default/templates/user/main.tpl" />
         <option value="$PROJECT_DIR$/source/user.php" />
+        <option value="$PROJECT_DIR$/themes/default/templates/user/sgk_data.tpl" />
       </list>
     </option>
   </component>
@@ -207,10 +135,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1280" />
-    <option name="y" value="-201" />
+    <option name="x" value="-11" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="1001" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -237,8 +165,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -448,18 +376,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
-      <setting name="environment" value="" />
-      <setting name="specsToExecute" value="" />
-      <setting name="tags" value="" />
-      <setting name="parallelNodes" value="" />
-      <setting name="execInParallel" value="false" />
-      <setting name="programParameters" value="" />
-      <setting name="workingDirectory" value="" />
-      <envMap />
-      <setting name="rowsRange" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -478,6 +394,18 @@
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
+      <setting name="environment" value="" />
+      <setting name="specsToExecute" value="" />
+      <setting name="tags" value="" />
+      <setting name="parallelNodes" value="" />
+      <setting name="execInParallel" value="false" />
+      <setting name="programParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <envMap />
+      <setting name="rowsRange" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
@@ -551,9 +479,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -561,6 +486,9 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
@@ -598,10 +526,6 @@
       <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -621,6 +545,10 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -884,7 +812,8 @@
       <workItem from="1428811278617" duration="8961000" />
       <workItem from="1428905127829" duration="11203000" />
       <workItem from="1428982812185" duration="10912000" />
-      <workItem from="1429060096068" duration="13488000" />
+      <workItem from="1429060096068" duration="13793000" />
+      <workItem from="1429083310941" duration="5583000" />
     </task>
     <task id="LOCAL-00001" summary="~">
       <created>1428741521891</created>
@@ -910,19 +839,25 @@
       <option name="project" value="LOCAL" />
       <updated>1429002282038</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="搜索出来的数据不会整了 整的头都晕了= =||">
+      <created>1429078576863</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1429078576863</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44961000" />
+    <option name="totallyTimeSpent" value="50849000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="-201" width="1280" height="1001" extended-state="6" />
+    <frame x="-11" y="23" width="1280" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -940,14 +875,14 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3278328" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893288" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -970,7 +905,8 @@
     <MESSAGE value="增加头像上传和修改功能&#10;没有进行美化上传修改头像页面" />
     <MESSAGE value="美化头像上传页面。好渣=，=" />
     <MESSAGE value="增加社工库查询核心代码&#10;&#10;现在的问题：&#10;没改数据表的名字0 0 查询半天没查询到，跟踪走了一遍才发现 - -||&#10;&#10;这个做的是单表的= =||" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加社工库查询核心代码&#10;&#10;现在的问题：&#10;没改数据表的名字0 0 查询半天没查询到，跟踪走了一遍才发现 - -||&#10;&#10;这个做的是单表的= =||" />
+    <MESSAGE value="搜索出来的数据不会整了 整的头都晕了= =||" />
+    <option name="LAST_COMMIT_MESSAGE" value="搜索出来的数据不会整了 整的头都晕了= =||" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -979,6 +915,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/source/sgk/sgk.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="795">
+          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/class/Pager.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
@@ -1016,13 +960,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/index.php">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43338683" vertical-offset="0" max-vertical-offset="623">
           <caret line="18" column="32" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="32" />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
@@ -1243,7 +1187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="810">
           <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1258,23 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="24615">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/sgk/sgk.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="795">
-          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/top.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="27.5" vertical-offset="870" max-vertical-offset="2445">
-          <caret line="14" column="2671" selection-start-line="9" selection-start-column="4" selection-end-line="14" selection-end-column="2671" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1282,7 +1208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8949825" vertical-offset="11833" max-vertical-offset="16455">
           <caret line="780" column="47" selection-start-line="780" selection-start-column="36" selection-end-line="780" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1291,96 +1216,112 @@
         <state vertical-scroll-proportion="-0.0" vertical-offset="480" max-vertical-offset="2340">
           <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
           <folding>
-            <marker date="1418963911000" expanded="true" signature="734:760" placeholder="select count..data_..." />
-            <marker date="1418963911000" expanded="true" signature="2307:5221" placeholder="..." />
-            <marker date="1418963911000" expanded="true" signature="2314:2635" placeholder="..." />
-            <marker date="1418963911000" expanded="true" signature="2642:5213" placeholder="..." />
-            <marker date="1418963911000" expanded="true" signature="2665:3791" placeholder="..." />
-            <marker date="1418963911000" expanded="true" signature="2675:3784" placeholder="..." />
-            <marker date="1418963911000" expanded="true" signature="2737:3773" placeholder="..." />
-            <marker date="1418963911000" expanded="true" signature="2881:3289" placeholder="..." />
-            <marker date="1418963911000" expanded="true" signature="3830:4407" placeholder="..." />
-            <marker date="1418963911000" expanded="true" signature="3899:4388" placeholder="..." />
-            <marker date="1418963911000" expanded="true" signature="4092:4382" placeholder="..." />
-            <marker date="1418963911000" expanded="true" signature="4451:5079" placeholder="..." />
-            <marker date="1418963911000" expanded="true" signature="4507:5073" placeholder="..." />
-            <marker date="1418963911000" expanded="true" signature="4521:5068" placeholder="..." />
-            <marker date="1418963911000" expanded="false" signature="4547:4565" placeholder="..." />
-            <marker date="1418963911000" expanded="false" signature="4601:4619" placeholder="..." />
-            <marker date="1418963911000" expanded="false" signature="4655:4673" placeholder="..." />
-            <marker date="1418963911000" expanded="false" signature="4708:4726" placeholder="..." />
-            <marker date="1418963911000" expanded="false" signature="4761:4779" placeholder="..." />
-            <marker date="1418963911000" expanded="false" signature="4814:4832" placeholder="..." />
-            <marker date="1418963911000" expanded="false" signature="4867:4885" placeholder="..." />
-            <marker date="1418963911000" expanded="false" signature="4920:4938" placeholder="..." />
-            <marker date="1418963911000" expanded="false" signature="4974:4992" placeholder="..." />
-            <marker date="1418963911000" expanded="false" signature="5027:5045" placeholder="..." />
-            <marker date="1418963911000" expanded="true" signature="5553:5600" placeholder="select * fro..data_..." />
+            <marker date="1418963911000" expanded="true" signature="-1:-1" placeholder="select count..data_..." />
+            <marker date="1418963911000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418963911000" expanded="true" signature="-1:-1" placeholder="select * fro..data_..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/user_setting.tpl">
+    <entry file="file://$PROJECT_DIR$/source/class/DB.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.105017506" vertical-offset="0" max-vertical-offset="990">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1305" max-vertical-offset="2235">
+          <caret line="92" column="35" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="35" />
+          <folding>
+            <marker date="1428741305000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1428741305000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/sgk/sgk.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6677266" vertical-offset="0" max-vertical-offset="795">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/time.tpl">
+    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/top.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17502917" vertical-offset="0" max-vertical-offset="857">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/main.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="600">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.3831478" vertical-offset="210" max-vertical-offset="2445">
+          <caret line="14" column="2671" selection-start-line="9" selection-start-column="4" selection-end-line="14" selection-end-column="2671" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/templates/admin/key.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.083333" vertical-offset="613" max-vertical-offset="1470">
+        <state vertical-scroll-proportion="0.4562798" vertical-offset="613" max-vertical-offset="1545">
           <caret line="57" column="72" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/sgk_data.tpl">
+    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/main.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="16.791666" vertical-offset="1648" max-vertical-offset="2505">
-          <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.5007949" vertical-offset="0" max-vertical-offset="629">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/class/DB.class.php">
+    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/user_setting.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.833334" vertical-offset="757" max-vertical-offset="2265">
-          <caret line="92" column="35" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="35" />
-          <folding>
-            <marker date="1428741305000" expanded="true" signature="1992:2099" placeholder="INSERT INTO ..." />
-            <marker date="1428741305000" expanded="true" signature="3823:3876" placeholder="DELETE FROM ..." />
-          </folding>
+        <state vertical-scroll-proportion="0.52305245" vertical-offset="136" max-vertical-offset="1110">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/time.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="555">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64874554" vertical-offset="958" max-vertical-offset="4020">
-          <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+        <state vertical-scroll-proportion="-14.958333" vertical-offset="1216" max-vertical-offset="4350">
+          <caret line="105" column="38" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
           <folding>
-            <marker date="1429078323000" expanded="true" signature="2344:2379" placeholder="select * fro..shegongku..." />
-            <marker date="1429078323000" expanded="true" signature="3304:3348" placeholder="SELECT * FRO.._tbartice ORDER..." />
-            <marker date="1429078323000" expanded="true" signature="3790:3843" placeholder="SELECT * FRO..sky_user..." />
-            <marker date="1429078323000" expanded="true" signature="3936:4004" placeholder="SELECT addKe..sky_invite_reg..." />
+            <marker date="1429088697000" expanded="true" signature="2351:2386" placeholder="select * fro..shegongku..." />
+            <marker date="1429088697000" expanded="true" signature="3469:3513" placeholder="SELECT * FRO.._tbartice ORDER..." />
+            <marker date="1429088697000" expanded="true" signature="3955:4008" placeholder="SELECT * FRO..sky_user..." />
+            <marker date="1429088697000" expanded="true" signature="4101:4169" placeholder="SELECT addKe..sky_invite_reg..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/sgk_data.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6438792" vertical-offset="1335" max-vertical-offset="2055">
+          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
