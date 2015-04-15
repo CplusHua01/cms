@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7172393d-4d61-4016-882c-e1f555b34da3" name="Default" comment="增加社工库查询核心代码&#10;&#10;现在的问题：&#10;没改数据表的名字0 0 查询半天没查询到，跟踪走了一遍才发现 - -||&#10;&#10;这个做的是单表的= =||">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/sgk.php" afterPath="" />
+    <list default="true" id="7172393d-4d61-4016-882c-e1f555b34da3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/default/templates/user/sgk_data.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/sgk/sgk.inc.php" afterPath="$PROJECT_DIR$/source/sgk/sgk.inc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/user.php" afterPath="$PROJECT_DIR$/source/user.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -48,26 +48,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.7625" vertical-offset="594" max-vertical-offset="3990">
-              <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.64874554" vertical-offset="958" max-vertical-offset="4020">
+              <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
               <folding>
-                <marker date="1429002035000" expanded="true" signature="2343:2378" placeholder="select * fro..shegongku..." />
-                <marker date="1429002035000" expanded="true" signature="3390:3434" placeholder="SELECT * FRO.._tbartice ORDER..." />
-                <marker date="1429002035000" expanded="true" signature="3876:3929" placeholder="SELECT * FRO..sky_user..." />
-                <marker date="1429002035000" expanded="true" signature="4022:4090" placeholder="SELECT addKe..sky_invite_reg..." />
+                <marker date="1429078323000" expanded="true" signature="2344:2379" placeholder="select * fro..shegongku..." />
+                <marker date="1429078323000" expanded="true" signature="3304:3348" placeholder="SELECT * FRO.._tbartice ORDER..." />
+                <marker date="1429078323000" expanded="true" signature="3790:3843" placeholder="SELECT * FRO..sky_user..." />
+                <marker date="1429078323000" expanded="true" signature="3936:4004" placeholder="SELECT addKe..sky_invite_reg..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/login.php">
+      <file leaf-file-name="DB.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/class/DB.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="810">
-              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+            <state vertical-scroll-proportion="-22.833334" vertical-offset="757" max-vertical-offset="2265">
+              <caret line="92" column="35" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="35" />
+              <folding>
+                <marker date="1428741305000" expanded="true" signature="1992:2099" placeholder="INSERT INTO ..." />
+                <marker date="1428741305000" expanded="true" signature="3823:3876" placeholder="DELETE FROM ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sgk_data.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/templates/user/sgk_data.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="16.791666" vertical-offset="1648" max-vertical-offset="2505">
+              <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="key.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/templates/admin/key.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.083333" vertical-offset="613" max-vertical-offset="1470">
+              <caret line="57" column="72" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="top.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/templates/user/top.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="27.5" vertical-offset="870" max-vertical-offset="2445">
+              <caret line="14" column="2671" selection-start-line="9" selection-start-column="4" selection-end-line="14" selection-end-column="2671" />
               <folding />
             </state>
           </provider>
@@ -76,8 +109,8 @@
       <file leaf-file-name="main.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/default/templates/user/main.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="600">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="570">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -86,8 +119,8 @@
       <file leaf-file-name="so.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ok/sgk3/include/so.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="16.960785" vertical-offset="1570" max-vertical-offset="2400">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="480" max-vertical-offset="2340">
+              <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
               <folding>
                 <marker date="1418963911000" expanded="true" signature="734:760" placeholder="select count..data_..." />
                 <marker date="1418963911000" expanded="true" signature="2307:5221" placeholder="..." />
@@ -119,21 +152,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sgk.api.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/sgk/sgk.api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="24615">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sgk.inc.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sgk.inc.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/sgk/sgk.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26881722" vertical-offset="0" max-vertical-offset="795">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="795">
+              <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -171,6 +194,10 @@
         <option value="$PROJECT_DIR$/source/class/sgkapi.php" />
         <option value="$PROJECT_DIR$/source/sgk.php" />
         <option value="$PROJECT_DIR$/source/sgk/sgk.inc.php" />
+        <option value="/HTML Fragment (user.php:2732).html" />
+        <option value="$PROJECT_DIR$/themes/default/templates/user/sgk_data.tpl" />
+        <option value="$PROJECT_DIR$/source/class/sgk.class.php" />
+        <option value="$PROJECT_DIR$/source/class/SGK.class.php" />
         <option value="$PROJECT_DIR$/source/user.php" />
       </list>
     </option>
@@ -210,6 +237,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -318,6 +347,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="source" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -340,10 +395,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="class" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -377,6 +448,18 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
+      <setting name="environment" value="" />
+      <setting name="specsToExecute" value="" />
+      <setting name="tags" value="" />
+      <setting name="parallelNodes" value="" />
+      <setting name="execInParallel" value="false" />
+      <setting name="programParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <envMap />
+      <setting name="rowsRange" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -395,18 +478,6 @@
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
-      <setting name="environment" value="" />
-      <setting name="specsToExecute" value="" />
-      <setting name="tags" value="" />
-      <setting name="parallelNodes" value="" />
-      <setting name="execInParallel" value="false" />
-      <setting name="programParameters" value="" />
-      <setting name="workingDirectory" value="" />
-      <envMap />
-      <setting name="rowsRange" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
@@ -480,6 +551,9 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -487,9 +561,6 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
@@ -527,6 +598,10 @@
       <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -546,10 +621,6 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -812,7 +883,8 @@
       <workItem from="1428743458848" duration="193000" />
       <workItem from="1428811278617" duration="8961000" />
       <workItem from="1428905127829" duration="11203000" />
-      <workItem from="1428982812185" duration="10794000" />
+      <workItem from="1428982812185" duration="10912000" />
+      <workItem from="1429060096068" duration="13488000" />
     </task>
     <task id="LOCAL-00001" summary="~">
       <created>1428741521891</created>
@@ -832,11 +904,17 @@
       <option name="project" value="LOCAL" />
       <updated>1428994251972</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="增加社工库查询核心代码&#10;&#10;现在的问题：&#10;没改数据表的名字0 0 查询半天没查询到，跟踪走了一遍才发现 - -||&#10;&#10;这个做的是单表的= =||">
+      <created>1429002282038</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1429002282038</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31355000" />
+    <option name="totallyTimeSpent" value="44961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-201" width="1280" height="1001" extended-state="6" />
@@ -844,7 +922,7 @@
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -855,21 +933,21 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893288" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3278328" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893288" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -895,28 +973,12 @@
     <option name="LAST_COMMIT_MESSAGE" value="增加社工库查询核心代码&#10;&#10;现在的问题：&#10;没改数据表的名字0 0 查询半天没查询到，跟踪走了一遍才发现 - -||&#10;&#10;这个做的是单表的= =||" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/class/DB.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2235">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/avatar.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="360">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/class/Pager.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
@@ -943,7 +1005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="12105" max-vertical-offset="12585">
           <caret line="807" column="16" selection-start-line="794" selection-start-column="10" selection-end-line="807" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -955,13 +1016,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/index.php">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43338683" vertical-offset="0" max-vertical-offset="623">
           <caret line="18" column="32" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="32" />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
@@ -1092,14 +1153,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/class/DB.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6708408" vertical-offset="765" max-vertical-offset="2235">
-          <caret line="79" column="45" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://db-console:/e3b30a3c/6d3fd16c-b367-411b-bdd7-aefdcd2f4c1e/">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="553">
@@ -1127,7 +1180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36756125" vertical-offset="0" max-vertical-offset="1140">
           <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,7 +1187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1143,7 +1194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19253209" vertical-offset="0" max-vertical-offset="1095">
           <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="13" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1151,23 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/time.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.017502917" vertical-offset="0" max-vertical-offset="857">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="30" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/top.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42240372" vertical-offset="1588" max-vertical-offset="2445">
-          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1175,9 +1208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33488914" vertical-offset="88" max-vertical-offset="975">
           <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1185,7 +1215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.62543756" vertical-offset="1654" max-vertical-offset="2685">
           <caret line="99" column="68" selection-start-line="99" selection-start-column="68" selection-end-line="99" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1193,23 +1222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.54259044" vertical-offset="8940" max-vertical-offset="14160">
           <caret line="544" column="123" selection-start-line="544" selection-start-column="18" selection-end-line="544" selection-end-column="123" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/user_setting.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45507586" vertical-offset="0" max-vertical-offset="1110">
-          <caret line="25" column="165" selection-start-line="25" selection-start-column="154" selection-end-line="25" selection-end-column="165" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/templates/admin/key.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8949825" vertical-offset="688" max-vertical-offset="1545">
-          <caret line="92" column="7" selection-start-line="2" selection-start-column="1" selection-end-line="92" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1217,7 +1229,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26254377" vertical-offset="0" max-vertical-offset="1995">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1225,14 +1236,60 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56242704" vertical-offset="22828" max-vertical-offset="23685">
           <caret line="1401" column="131" selection-start-line="1401" selection-start-column="120" selection-end-line="1401" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="810">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5950992" vertical-offset="0" max-vertical-offset="1140">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/sgk/sgk.api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="24615">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/sgk/sgk.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="795">
+          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/top.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="27.5" vertical-offset="870" max-vertical-offset="2445">
+          <caret line="14" column="2671" selection-start-line="9" selection-start-column="4" selection-end-line="14" selection-end-column="2671" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Se7en_Template/tables.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8949825" vertical-offset="11833" max-vertical-offset="16455">
+          <caret line="780" column="47" selection-start-line="780" selection-start-column="36" selection-end-line="780" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../ok/sgk3/include/so.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="16.960785" vertical-offset="1570" max-vertical-offset="2400">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.0" vertical-offset="480" max-vertical-offset="2340">
+          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
           <folding>
             <marker date="1418963911000" expanded="true" signature="734:760" placeholder="select count..data_..." />
             <marker date="1418963911000" expanded="true" signature="2307:5221" placeholder="..." />
@@ -1263,56 +1320,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/user_setting.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.105017506" vertical-offset="0" max-vertical-offset="990">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/time.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17502917" vertical-offset="0" max-vertical-offset="857">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/templates/user/main.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="600">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="600">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/login.php">
+    <entry file="file://$PROJECT_DIR$/themes/default/templates/admin/key.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="810">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        <state vertical-scroll-proportion="-10.083333" vertical-offset="613" max-vertical-offset="1470">
+          <caret line="57" column="72" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/sgk/sgk.api.php">
+    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/sgk_data.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="24615">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="16.791666" vertical-offset="1648" max-vertical-offset="2505">
+          <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
+    <entry file="file://$PROJECT_DIR$/source/class/DB.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5950992" vertical-offset="0" max-vertical-offset="1140">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-          <folding />
+        <state vertical-scroll-proportion="-22.833334" vertical-offset="757" max-vertical-offset="2265">
+          <caret line="92" column="35" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="35" />
+          <folding>
+            <marker date="1428741305000" expanded="true" signature="1992:2099" placeholder="INSERT INTO ..." />
+            <marker date="1428741305000" expanded="true" signature="3823:3876" placeholder="DELETE FROM ..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.7625" vertical-offset="594" max-vertical-offset="3990">
-          <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.64874554" vertical-offset="958" max-vertical-offset="4020">
+          <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
           <folding>
-            <marker date="1429002035000" expanded="true" signature="2343:2378" placeholder="select * fro..shegongku..." />
-            <marker date="1429002035000" expanded="true" signature="3390:3434" placeholder="SELECT * FRO.._tbartice ORDER..." />
-            <marker date="1429002035000" expanded="true" signature="3876:3929" placeholder="SELECT * FRO..sky_user..." />
-            <marker date="1429002035000" expanded="true" signature="4022:4090" placeholder="SELECT addKe..sky_invite_reg..." />
+            <marker date="1429078323000" expanded="true" signature="2344:2379" placeholder="select * fro..shegongku..." />
+            <marker date="1429078323000" expanded="true" signature="3304:3348" placeholder="SELECT * FRO.._tbartice ORDER..." />
+            <marker date="1429078323000" expanded="true" signature="3790:3843" placeholder="SELECT * FRO..sky_user..." />
+            <marker date="1429078323000" expanded="true" signature="3936:4004" placeholder="SELECT addKe..sky_invite_reg..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/sgk/sgk.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26881722" vertical-offset="0" max-vertical-offset="795">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>

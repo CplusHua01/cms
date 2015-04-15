@@ -63,7 +63,7 @@ switch($act){
         $sp->SetMatchMode($mod);
         if ($keyToSearch != " ")                   // 如果关键字为空 不执行 否则程序出错
             $result = $sp->Query($keyToSearch, "*");                 //执行搜索
-        if(is_array($result['matches'])){
+        if(is_array($result['matches'])) {
             $sql_id = array();
             foreach ($result['matches'] as $k => $v) {
                 $sql_id[$i] = $v["id"];
@@ -75,24 +75,30 @@ switch($act){
                 $sql_query[$i] = $sql;
                 $i++;
             }
-            function dis_td($sql,$sgk_con)
+            function dis_td($sql, $sgk_con)
             {
-                $result = mysqli_query($sgk_con,$sql);
-                while ($row = mysqli_fetch_assoc($result)){
-                    print_r($row);
+                $result = mysqli_query($sgk_con, $sql);
+                if($result){
+//                    $rows=array();
+                    while ($row = mysqli_fetch_array($result)) {
+//                        $rows[0]=$row;
+                        return $row;
+                    }
+                    mysqli_free_result($result);
+//                    return $rows;
                 }
-                mysqli_free_result($result);
-//            while ($row = mysql_fetch_assoc($result)) {
-//                echo "<tr> <td>" . $row["source"] .
-//                    "</td> <td>" . $row["username"] . "</td> <td>" . $row["password"] . "</td> <td>" . $row["email"] .
-//                    "</td> <td>" . $row["realname"] . "</td> <td>" . $row["mobile"] . "</td> <td>" . $row["tel"] .
-//                    "</td> <td>" . $row["idcard"] . "</td> <td>" . $row["qq"] . "</td> <td>" . $row["others"] . " </td> </tr>";
-//            }
+
             }
-            foreach ($sql_query as $sql) {
-                dis_td($sql,$con);
+
+                $smarty = InitSmarty();
+                foreach ($sql_query as $sql) {
+                    $sgk_data = dis_td($sql, $con);
+//                    print_r($sgk_data[0][5]);
+                }
+//                $smarty->assign('data', $sgk_data);
+//                $smarty->display('user/sgk_data.tpl');
             }
-        }
+
         break;
     case "time":
         $sql="SELECT * FROM ".$tbartice." ORDER BY id DESC ";
@@ -244,9 +250,6 @@ switch($act){
             }
 
         }
-        break;
-    case "test":
-        echo AV_UPPATH;
         break;
     default:
         $title='社工库查询系统';
