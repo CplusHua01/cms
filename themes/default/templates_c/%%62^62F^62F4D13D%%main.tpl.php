@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.25, created on 2015-04-15 16:12:11
+<?php /* Smarty version 2.6.25, created on 2015-04-16 09:19:24
          compiled from user/main.tpl */ ?>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "user/top.tpl", 'smarty_include_vars' => array()));
@@ -20,7 +20,7 @@ unset($_smarty_tpl_vars);
 <body>
 <div align='center'>
     <form method='post' action='<?php echo $this->_tpl_vars['url']['root']; ?>
-/user/sgk' target=‘_blank‘>
+/search' target=‘_blank‘>
         <select class="regularSelect" id='searchMode' name="mode">
             <option value="SPH_MATCH_FULLSCAN" selected="selected" data-skip="1">完整扫描</option>
             <option value="SPH_MATCH_FULLSCAN" >完整扫描</option>

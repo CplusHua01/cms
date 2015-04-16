@@ -10,7 +10,7 @@
 </head>
 <body>
 <div align='center'>
-    <form method='post' action='{$url.root}/user/sgk' target=‘_blank‘>
+    <form method='post' action='{$url.root}/search' target=‘_blank‘>
         <select class="regularSelect" id='searchMode' name="mode">
             <option value="SPH_MATCH_FULLSCAN" selected="selected" data-skip="1">完整扫描</option>
             <option value="SPH_MATCH_FULLSCAN" >完整扫描</option>

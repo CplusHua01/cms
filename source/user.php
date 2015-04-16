@@ -45,7 +45,8 @@ switch($act){
 
 
 
-
+        $p=Val('p','GET');
+        $p=($p<1) ? 0 : $p ;
         require_once('sgk/sgk.inc.php');
         require_once('sgk/sgk.api.php');
         require_once('class/Security.class.php');
@@ -64,11 +65,26 @@ switch($act){
         $sp = new SphinxClient();
         $sp->SetServer('10.211.55.14', 9312);                //设置spinx的服务器地址和端口
         $sp->SetArrayResult(true);                                  //设置 显示结果集方式
-        $sp->SetLimits(0, 1000);                           //同sql语句中的LIMIT
+        $sp->SetLimits($p*10,10);                           //同sql语句中的LIMIT
         $sp->SetSortMode(SPH_SORT_RELEVANCE);                       //设置默认按照相关性排序
         $sp->SetMatchMode($mod);
         if ($keyToSearch != " ")                   // 如果关键字为空 不执行 否则程序出错
             $result = $sp->Query($keyToSearch, "*");                 //执行搜索
+        $count = $result['total'];
+        //计算一共多少页
+        $pn=(ceil($count / 10));
+//        echo $pn;
+//        $count = $result['total'];
+//        $start = $count / 2;
+//        $offset= 2 * $start;
+//        echo $start;
+//        echo "<br>";
+//        echo $offset;
+//        $sp->SetLimits($start,$offset);
+
+
+
+
         if(is_array($result['matches'])) {
             $sql_id = array();
             foreach ($result['matches'] as $k => $v) {
@@ -106,8 +122,13 @@ switch($act){
                     array_push($arr,$sgk_data);
                     $i++;
                 }
+            $smarty->assign('num',$count);
+            $smarty->assign('olPage',$i);
+            $smarty->assign('pn',$pn);
+            $smarty->assign('key',$keyToSearch);
                 $smarty->assign('datas',$arr);
                 $smarty->display('user/sgk_data.tpl');
+
             }
 
         break;

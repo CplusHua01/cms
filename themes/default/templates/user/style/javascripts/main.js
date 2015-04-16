@@ -295,7 +295,7 @@
     # =============================================================================
     */
 
-    $("#dataTable1").dataTable({
+    $("#data").dataTable({
       "sPaginationType": "full_numbers",
       aoColumnDefs: [
         {
