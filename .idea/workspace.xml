@@ -4,9 +4,6 @@
     <list default="true" id="7172393d-4d61-4016-882c-e1f555b34da3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/templates_c/%%62^62F^62F4D13D%%main.tpl.php" afterPath="$PROJECT_DIR$/themes/default/templates_c/%%62^62F^62F4D13D%%main.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/templates/user/style/stylesheets/datatables.css" afterPath="$PROJECT_DIR$/themes/default/templates/user/style/stylesheets/datatables.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/templates/user/style/javascripts/jquery.dataTables.min.js" afterPath="$PROJECT_DIR$/themes/default/templates/user/style/javascripts/jquery.dataTables.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/templates/user/style/javascripts/main.js" afterPath="$PROJECT_DIR$/themes/default/templates/user/style/javascripts/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/templates/user/main.tpl" afterPath="$PROJECT_DIR$/themes/default/templates/user/main.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/templates/user/sgk_data.tpl" afterPath="$PROJECT_DIR$/themes/default/templates/user/sgk_data.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/user.php" afterPath="$PROJECT_DIR$/source/user.php" />
@@ -56,63 +53,23 @@
       <file leaf-file-name="user.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7584973" vertical-offset="1436" max-vertical-offset="4665">
-              <caret line="124" column="35" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.789965" vertical-offset="1663" max-vertical-offset="4965">
+              <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
               <folding>
-                <marker date="1429155153000" expanded="true" signature="2728:2763" placeholder="select * fro..shegongku..." />
-                <marker date="1429155153000" expanded="true" signature="4020:4064" placeholder="SELECT * FRO.._tbartice ORDER..." />
-                <marker date="1429155153000" expanded="true" signature="4506:4559" placeholder="SELECT * FRO..sky_user..." />
-                <marker date="1429155153000" expanded="true" signature="4652:4720" placeholder="SELECT addKe..sky_invite_reg..." />
+                <marker date="1429170919000" expanded="true" signature="3727:3762" placeholder="select * fro..shegongku..." />
+                <marker date="1429170919000" expanded="true" signature="5222:5266" placeholder="SELECT * FRO.._tbartice ORDER..." />
+                <marker date="1429170919000" expanded="true" signature="5708:5761" placeholder="SELECT * FRO..sky_user..." />
+                <marker date="1429170919000" expanded="true" signature="5854:5922" placeholder="SELECT addKe..sky_invite_reg..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
+      <file leaf-file-name="main.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/templates/user/main.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-              <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sgk_data.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/default/templates/user/sgk_data.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="16.708334" vertical-offset="1556" max-vertical-offset="2325">
-              <caret line="77" column="45" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/admin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.416666" vertical-offset="2636" max-vertical-offset="3525">
-              <caret line="202" column="44" selection-start-line="202" selection-start-column="44" selection-end-line="202" selection-end-column="44" />
-              <folding>
-                <marker date="1428915748000" expanded="true" signature="1301:1383" placeholder="select * fro.._tbInviteReg WHERE..." />
-                <marker date="1428915748000" expanded="true" signature="1406:1497" placeholder="SELECT count.._tbInviteReg WHERE..." />
-                <marker date="1428915748000" expanded="true" signature="2769:2814" placeholder="SELECT * FRO.._tbArticle ORDER..." />
-                <marker date="1428915748000" expanded="true" signature="2837:2900" placeholder="select count.._tbArticle  WHERE..." />
-                <marker date="1428915748000" expanded="true" signature="3527:3584" placeholder="SELECT * FRO.._tbArticle WHERE..." />
-                <marker date="1428915748000" expanded="true" signature="5885:5910" placeholder="SELECT * FRO..sky_article..." />
-                <marker date="1428915748000" expanded="true" signature="6081:6123" placeholder="select * fro.._tbUser ORDER..." />
-                <marker date="1428915748000" expanded="true" signature="6146:6205" placeholder="SELECT count.._tbUser WHERE..." />
-                <marker date="1428915748000" expanded="true" signature="6829:6891" placeholder="DELETE FROM ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pager.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/class/Pager.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.25" vertical-offset="150" max-vertical-offset="1530">
-              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="630">
+              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -157,13 +114,13 @@
         <option value="/HTML Fragment (user.php:2732).html" />
         <option value="$PROJECT_DIR$/source/class/sgk.class.php" />
         <option value="$PROJECT_DIR$/source/class/SGK.class.php" />
-        <option value="$PROJECT_DIR$/themes/default/templates/user/main.tpl" />
         <option value="$PROJECT_DIR$/themes/default/templates/user/style/javascripts/main.js" />
         <option value="$PROJECT_DIR$/themes/default/templates/user/style/stylesheets/datatables.css" />
         <option value="$PROJECT_DIR$/themes/default/templates/user/style/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/themes/default/templates/admin/style/javascripts/jquery.dataTables.min.js" />
         <option value="$PROJECT_DIR$/themes/default/templates/user/style/javascripts/jquery.dataTables.min.js" />
         <option value="$PROJECT_DIR$/themes/default/templates/user/sgk_data.tpl" />
+        <option value="$PROJECT_DIR$/themes/default/templates/user/main.tpl" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/source/user.php" />
       </list>
@@ -204,6 +161,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -354,75 +312,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="style" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sgkcss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="style" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -478,7 +368,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -513,18 +402,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
-      <setting name="environment" value="" />
-      <setting name="specsToExecute" value="" />
-      <setting name="tags" value="" />
-      <setting name="parallelNodes" value="" />
-      <setting name="execInParallel" value="false" />
-      <setting name="programParameters" value="" />
-      <setting name="workingDirectory" value="" />
-      <envMap />
-      <setting name="rowsRange" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -543,6 +420,18 @@
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
+      <setting name="environment" value="" />
+      <setting name="specsToExecute" value="" />
+      <setting name="tags" value="" />
+      <setting name="parallelNodes" value="" />
+      <setting name="execInParallel" value="false" />
+      <setting name="programParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <envMap />
+      <setting name="rowsRange" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
@@ -616,9 +505,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -626,6 +512,9 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
@@ -663,10 +552,6 @@
       <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -686,6 +571,10 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -951,7 +840,8 @@
       <workItem from="1428982812185" duration="10912000" />
       <workItem from="1429060096068" duration="13793000" />
       <workItem from="1429083310941" duration="6237000" />
-      <workItem from="1429146372738" duration="8724000" />
+      <workItem from="1429146372738" duration="8846000" />
+      <workItem from="1429162739564" duration="8042000" />
     </task>
     <task id="LOCAL-00001" summary="~">
       <created>1428741521891</created>
@@ -989,11 +879,17 @@
       <option name="project" value="LOCAL" />
       <updated>1429089547603</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="= = 不知道怎么写下一页的代码了。。">
+      <created>1429155197573</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1429155197573</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60227000" />
+    <option name="totallyTimeSpent" value="68391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-201" width="1280" height="1001" extended-state="6" />
@@ -1005,7 +901,6 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3278328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1020,11 +915,12 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3278328" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3278328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1051,7 +947,8 @@
     <MESSAGE value="增加社工库查询核心代码&#10;&#10;现在的问题：&#10;没改数据表的名字0 0 查询半天没查询到，跟踪走了一遍才发现 - -||&#10;&#10;这个做的是单表的= =||" />
     <MESSAGE value="搜索出来的数据不会整了 整的头都晕了= =||" />
     <MESSAGE value="修复取查询到的数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复取查询到的数据" />
+    <MESSAGE value="= = 不知道怎么写下一页的代码了。。" />
+    <option name="LAST_COMMIT_MESSAGE" value="= = 不知道怎么写下一页的代码了。。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1286,7 +1183,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="555">
           <caret line="8" column="31" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1294,7 +1190,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0151691" vertical-offset="210" max-vertical-offset="2445">
           <caret line="14" column="2671" selection-start-line="9" selection-start-column="4" selection-end-line="14" selection-end-column="2671" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1302,7 +1197,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="23.041666" vertical-offset="10738" max-vertical-offset="11610">
           <caret line="679" column="25" selection-start-line="657" selection-start-column="20" selection-end-line="679" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1310,7 +1204,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56242704" vertical-offset="15598" max-vertical-offset="16455">
           <caret line="1012" column="28" selection-start-line="1012" selection-start-column="28" selection-end-line="1012" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1318,7 +1211,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3325554" vertical-offset="4995" max-vertical-offset="11520">
           <caret line="293" column="80" selection-start-line="293" selection-start-column="70" selection-end-line="293" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1326,7 +1218,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5215827" vertical-offset="4315" max-vertical-offset="17835">
           <caret line="304" column="7" selection-start-line="304" selection-start-column="7" selection-end-line="304" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1334,7 +1225,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6878216" vertical-offset="724" max-vertical-offset="1605">
           <caret line="69" column="36" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1342,7 +1232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6655232" vertical-offset="827" max-vertical-offset="1410">
           <caret line="3" column="9257" selection-start-line="3" selection-start-column="9257" selection-end-line="3" selection-end-column="9257" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1350,7 +1239,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6672384" vertical-offset="9121" max-vertical-offset="10440">
           <caret line="144" column="38" selection-start-line="144" selection-start-column="38" selection-end-line="144" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1358,7 +1246,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6564748" vertical-offset="4330" max-vertical-offset="18045">
           <caret line="310" column="37" selection-start-line="310" selection-start-column="37" selection-end-line="310" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1374,9 +1261,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.176259" vertical-offset="41429" max-vertical-offset="41985">
           <caret line="2394" column="8" selection-start-line="2394" selection-start-column="8" selection-end-line="2394" selection-end-column="8" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1388,75 +1272,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/main.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40250447" vertical-offset="0" max-vertical-offset="600">
-          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/templates/admin/time_list.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2647585" vertical-offset="178" max-vertical-offset="1095">
           <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="57" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/templates/user/sgk_data.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="16.708334" vertical-offset="1556" max-vertical-offset="2325">
-          <caret line="77" column="45" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.6674446" vertical-offset="1468" max-vertical-offset="2400">
+          <caret line="78" column="33" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.416666" vertical-offset="2636" max-vertical-offset="3525">
+        <state vertical-scroll-proportion="0.4597433" vertical-offset="2636" max-vertical-offset="3525">
           <caret line="202" column="44" selection-start-line="202" selection-start-column="44" selection-end-line="202" selection-end-column="44" />
           <folding>
-            <marker date="1428915748000" expanded="true" signature="1301:1383" placeholder="select * fro.._tbInviteReg WHERE..." />
-            <marker date="1428915748000" expanded="true" signature="1406:1497" placeholder="SELECT count.._tbInviteReg WHERE..." />
-            <marker date="1428915748000" expanded="true" signature="2769:2814" placeholder="SELECT * FRO.._tbArticle ORDER..." />
-            <marker date="1428915748000" expanded="true" signature="2837:2900" placeholder="select count.._tbArticle  WHERE..." />
-            <marker date="1428915748000" expanded="true" signature="3527:3584" placeholder="SELECT * FRO.._tbArticle WHERE..." />
-            <marker date="1428915748000" expanded="true" signature="5885:5910" placeholder="SELECT * FRO..sky_article..." />
-            <marker date="1428915748000" expanded="true" signature="6081:6123" placeholder="select * fro.._tbUser ORDER..." />
-            <marker date="1428915748000" expanded="true" signature="6146:6205" placeholder="SELECT count.._tbUser WHERE..." />
-            <marker date="1428915748000" expanded="true" signature="6829:6891" placeholder="DELETE FROM ..." />
+            <marker date="1428915748000" expanded="true" signature="-1:-1" placeholder="select * fro.._tbInviteReg WHERE..." />
+            <marker date="1428915748000" expanded="true" signature="-1:-1" placeholder="SELECT count.._tbInviteReg WHERE..." />
+            <marker date="1428915748000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO.._tbArticle ORDER..." />
+            <marker date="1428915748000" expanded="true" signature="-1:-1" placeholder="select count.._tbArticle  WHERE..." />
+            <marker date="1428915748000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO.._tbArticle WHERE..." />
+            <marker date="1428915748000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..sky_article..." />
+            <marker date="1428915748000" expanded="true" signature="-1:-1" placeholder="select * fro.._tbUser ORDER..." />
+            <marker date="1428915748000" expanded="true" signature="-1:-1" placeholder="SELECT count.._tbUser WHERE..." />
+            <marker date="1428915748000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/class/Pager.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25" vertical-offset="150" max-vertical-offset="1530">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1455">
           <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22133939" vertical-offset="0" max-vertical-offset="881">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/templates/user/main.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="630">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7584973" vertical-offset="1436" max-vertical-offset="4665">
-          <caret line="124" column="35" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.789965" vertical-offset="1663" max-vertical-offset="4965">
+          <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
           <folding>
-            <marker date="1429155153000" expanded="true" signature="2728:2763" placeholder="select * fro..shegongku..." />
-            <marker date="1429155153000" expanded="true" signature="4020:4064" placeholder="SELECT * FRO.._tbartice ORDER..." />
-            <marker date="1429155153000" expanded="true" signature="4506:4559" placeholder="SELECT * FRO..sky_user..." />
-            <marker date="1429155153000" expanded="true" signature="4652:4720" placeholder="SELECT addKe..sky_invite_reg..." />
+            <marker date="1429170919000" expanded="true" signature="3727:3762" placeholder="select * fro..shegongku..." />
+            <marker date="1429170919000" expanded="true" signature="5222:5266" placeholder="SELECT * FRO.._tbartice ORDER..." />
+            <marker date="1429170919000" expanded="true" signature="5708:5761" placeholder="SELECT * FRO..sky_user..." />
+            <marker date="1429170919000" expanded="true" signature="5854:5922" placeholder="SELECT addKe..sky_invite_reg..." />
           </folding>
         </state>
       </provider>

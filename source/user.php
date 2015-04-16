@@ -39,97 +39,117 @@ $tbUser=$db->tbPrefix.'user';
 
 switch($act){
     case "sgk":
+//        $getMod=$_GET['mode'];
+        $getMod= Val('mode','GET');
+//        $getShe=$_GET['she'];
+        $getShe= Val('she','GET');
+//        $getKey=$_GET['key'];
+        $getKey = Val('key','GET');
+        if(!empty($getMod)||!empty($getKey)||!empty($getShe)){
 
+            $p=Val('p','GET');
+            $p = ($p<1) ? 0 : $p ;
+            require_once('sgk/sgk.inc.php');
+            require_once('sgk/sgk.api.php');
+            require_once('class/Security.class.php');
+//        $mod = $_POST["mode"];//取得搜索模式
+//        $md5 = $_POST["she"]; //取得关键字
 
-
-
-
-
-        $p=Val('p','GET');
-        $p=($p<1) ? 0 : $p ;
-        require_once('sgk/sgk.inc.php');
-        require_once('sgk/sgk.api.php');
-        require_once('class/Security.class.php');
-        $mod = $_POST["mode"];//取得搜索模式
-        $md5 = $_POST["she"]; //取得关键字
-
-        if ($md5 == "搜") {//普通搜素
-            $keyToSearch = security::sky_g($_POST["key"]);
-        }
-        if ($md5 == "MD5^16") {//MD516位搜索
-            $keyToSearch = substr(md5(security::sky_g($_POST["key"])), 8, 16);
-        }
-        if ($md5 == "MD5^32") {//md532位搜索
-            $keyToSearch = md5(security::sky_g($_POST["key"]));
-        }
-        $sp = new SphinxClient();
-        $sp->SetServer('10.211.55.14', 9312);                //设置spinx的服务器地址和端口
-        $sp->SetArrayResult(true);                                  //设置 显示结果集方式
-        $sp->SetLimits($p*10,10);                           //同sql语句中的LIMIT
-        $sp->SetSortMode(SPH_SORT_RELEVANCE);                       //设置默认按照相关性排序
-        $sp->SetMatchMode($mod);
-        if ($keyToSearch != " ")                   // 如果关键字为空 不执行 否则程序出错
-            $result = $sp->Query($keyToSearch, "*");                 //执行搜索
-        $count = $result['total'];
-        //计算一共多少页
-        $pn=(ceil($count / 10));
-//        echo $pn;
-//        $count = $result['total'];
-//        $start = $count / 2;
-//        $offset= 2 * $start;
-//        echo $start;
-//        echo "<br>";
-//        echo $offset;
-//        $sp->SetLimits($start,$offset);
-
-
-
-
-        if(is_array($result['matches'])) {
-            $sql_id = array();
-            foreach ($result['matches'] as $k => $v) {
-                $sql_id[$i] = $v["id"];
-                $i++;
+            switch($getMod){
+                case 1:
+                    $mod = "SPH_MATCH_FULLSCAN";
+                    break;
+                case 2:
+                    $mod = "SPH_MATCH_EXTENDED2";
+                    break;
+                case 3:
+                    $mod = "SPH_MATCH_BOOLEAN";
+                    break;
+                case 4:
+                    $mod = "SPH_MATCH_PHRASE";
+                    break;
+                case 5:
+                    $mod = "SPH_MATCH_ANY";
+                    break;
+                case 6:
+                    $mod = "SPH_MATCH_ALL";
+                    break;
+                default:
+                    ShowError('骚年！ಥ_ಥ，你滴访问出错啦！！！','javascript:closeWindow()','关闭');
             }
-            $sql_query = array();
-            foreach ($sql_id as $id) {
-                $sql = "select * from shegongku  where id =" . $id;
-                $sql_query[$i] = $sql;
-                $i++;
+            switch($getShe){
+                case 'MD5_16':
+                    $keyToSearch = substr(md5($getKey),8,16);
+                    break;
+                case 'MD5_32':
+                    $keyToSearch = md5($getKey);
+                    break;
+                case 'Normal':
+                    $keyToSearch = $getKey;
+                    break;
+                default:
+                    ShowError('ಥ_ಥ，出错啦！！！','javascript:closeWindow()','关闭');
             }
-            function dis_td($sql, $sgk_con)
-            {
-                $result = mysqli_query($sgk_con, $sql);
-                if($result){
-//                    $rows=array();
-                    while ($row = mysqli_fetch_array($result)) {
-//                        $rows[0]=$row;
-                        return $row;
-                    }
-                    mysqli_free_result($result);
-//                    return $rows;
+            $sp = new SphinxClient();
+            $sp->SetServer('10.211.55.14', 9312);                //设置spinx的服务器地址和端口
+            $sp->SetArrayResult(true);                                  //设置 显示结果集方式
+            $sp->SetLimits($p*10,10);                           //同sql语句中的LIMIT
+            $sp->SetSortMode(SPH_SORT_RELEVANCE);                       //设置默认按照相关性排序
+            $sp->SetMatchMode($mod);
+            if ($keyToSearch != " ")                   // 如果关键字为空 不执行 否则程序出错
+                $result = $sp->Query($keyToSearch, "*");                 //执行搜索
+            $count = $result['total'];
+            //计算一共多少页
+            $pn=(ceil($count / 10));
+
+            if(is_array($result['matches'])) {
+                $sql_id = array();
+                foreach ($result['matches'] as $k => $v) {
+                    $sql_id[$i] = $v["id"];
+                    $i++;
                 }
+                $sql_query = array();
+                foreach ($sql_id as $id) {
+                    $sql = "select * from shegongku  where id =" . $id;
+                    $sql_query[$i] = $sql;
+                    $i++;
+                }
+                function dis_td($sql, $sgk_con)
+                {
+                    $result = mysqli_query($sgk_con, $sql);
+                    if($result){
+//                    $rows=array();
+                        while ($row = mysqli_fetch_array($result)) {
+//                        $rows[0]=$row;
+                            return $row;
+                        }
+                        mysqli_free_result($result);
+//                    return $rows;
+                    }
 
-            }
+                }
 
                 $smarty = InitSmarty();
                 //print_r($sql_query);exit;
 //                print_r(dis_td($sql,$con));
-            $i=0;
-            $arr=array();
-            foreach ($sql_query as $sql) {
+                $i=0;
+                $arr=array();
+                foreach ($sql_query as $sql) {
                     $sgk_data = dis_td($sql, $con);
                     array_push($arr,$sgk_data);
                     $i++;
                 }
-            $smarty->assign('num',$count);
-            $smarty->assign('olPage',$i);
-            $smarty->assign('pn',$pn);
-            $smarty->assign('key',$keyToSearch);
+                $smarty->assign('num',$count);
+                $smarty->assign('olPage',$i);
+                $smarty->assign('pn',$pn);
+                $smarty->assign('p',$p);
+                $smarty->assign('key',$keyToSearch);
                 $smarty->assign('datas',$arr);
                 $smarty->display('user/sgk_data.tpl');
-
+            }else{
+                ShowError('骚年，木有搜索到啊！换个关键词试试看？','#');
             }
+        }
 
         break;
 

@@ -67,16 +67,21 @@
 
                     <ul class="pagination">
                     <li>
-                        <a class="icon" href="#"><i class="icon-long-arrow-left"></i></a>
+                        <a class="icon" href="1"><i class="icon-long-arrow-left"></i></a>
                     </li>
                     {*<li class="active">*}
                         {*<a href="#">1</a>*}
                     {*</li>*}
                         {section name=loop loop=$pn}
-
+                        {if $p eq $smarty.section.loop.index}
+                            <li class="active">
+                                <a href="{$smarty.section.loop.index}">{$smarty.section.loop.index}</a>
+                            </li>
+                            {else}
                         <li>
-                        <a href="search/{$key}/{$smarty.section.loop.index}">{$smarty.section.loop.index}</a>
-                    </li>
+                        <a href="{$smarty.section.loop.index}">{$smarty.section.loop.index}</a>
+                        </li>
+                            {/if}
                         {/section}
                         <li>
                         <a class="icon" href="#"><i class="icon-long-arrow-right"></i></a>
