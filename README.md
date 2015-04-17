@@ -1,50 +1,75 @@
-<div id="container">
-  <h3>CMS | 版本 1.0 | 开源、简单、安全的PHP开发框架</h3>
-  <p id="part1">
-    1. 程序文件组织
-    <pre><code>| install/                    /* 数据库文件、服务器Rewrite规则 */
-  | oldcms.sql                /* 数据库文件 */
-  | rewrite.txt               /* Rewrite规则(Apache,Nginx) */
-| libs/                       /* Smarty程序目录 */
-| source/                     /* 核心类库、方法 */
-  | class/                    /* 类库 */
-    | Captcha.class.php       /* 验证码类 */
-    | DB.class.php            /* 数据库操作类 */
-    | Image.class.php         /* 图片上传、缩略图类 */
-    | Pager.class.php         /* 分页类 */
-    | PHPMailer.class.php     /* 邮件类 */
-    | Smtp.class.php          /* 邮件类 */
-    | User.class.php          /* 用户类 */
-  | common.php                /* 公共处理页面 */
-  | function.php              /* 核心方法库 */
-  | global.func.php           /* 自定义方法 */
-  | index.php                 /* 首页 */
-  | login.php                 /* 登录 */
-  | register.php              /* 注册 */
-| themes/                     /* 主题模板目录 */
-  | default/
-    | css/
-    | img/
-    | templates/
-      | index.html
-| captcha.php                 /* 验证码图片显示 */
-| config.php                  /* 数据库配置、网站配置等 */
-| init.php                    /* 初始化 */
-| index.php                   /* 程序开始页 */</code></pre>
-  </p>
-  <p id="part2">
-    2. 使用流程
-    <pre><code>(1) 将/install/oldcms.sql入库，如需Rewrite则按rewrite.txt重写，然后配置/config.php
-    相关数据库连接等信息。
-(2) 在/index.php里修改$dos数组，同时在/source目录建立相关程序文件，访问url: 
-    /index.php?do=index&act=index。
-(3) /themes里为Smarty调用的模板目录，结构比较简单。</code></pre>
-  </p>
-  <p id="part3">
-    3. 登录与注册：程序包里默认集成了登录和注册模块，如需使用请看相关文件。
-  </p>
-  <p id="part4">
-    4. 程序安全：为了增强程序的安全，获取$_GET,$_POST,$_COOKIE等变量值时请尽量使用<strong>Val</strong>方法，具体请看/source/function.php，其它获取的变量值过滤可使用StripStr方法。
-  </p>
-  iiuskytest@163.com    123456a
-</div>
+├── 404.html
+├── 50x.html
+├── captcha.php //验证码获取
+├── config.php //配置
+├── index.php //首页
+├── init.php //初始化
+├── libs //外部类
+│   ├── Config_File.class.php //smarty
+│   ├── Smarty.class.php //smarty
+│   ├── Smarty_Compiler.class.php	//smarty
+│   ├── debug.tpl	//调试模板
+│   ├── internals smarty内部代码
+│   ├── kindeditor //编辑器
+│   └── plugins //smarty 插件
+├── source
+│   ├── admin.php //管理员操作核心代码
+│   ├── class	//类库
+│   │   ├── Captcha.class.php		//验证码类
+│   │   ├── DB.class.php			//数据库操作类
+│   │   ├── Image.class.php		//图片处理类
+│   │   ├── PHPMailer.class.php	//邮件类
+│   │   ├── Pager.class.php	//分页类
+│   │   ├── Smtp.class.php	//邮件类
+│   │   ├── User.class.php	//user 操作类
+│   │   └── security.class.php //安全过滤类
+│   ├── common.php	//公共处理页面
+│   ├── function.php	//方法函数集
+│   ├── global.func.php	//全局变量
+│   ├── index.php	//首页的核心代码
+│   ├── login.php	//登录的核心代码
+│   ├── register.php	//注册的核心代码
+│   ├── sgk	//社工库配置目录
+│   │   ├── sgk.api.php	//spinx的api
+│   │   └── sgk.inc.php	//连接的社工库的配置信息
+│   └── user.php	//用户操作核心代码
+├── themes	//主题
+│   └── default	//默认主题
+│       ├── templates	//smarty 模板目录
+│       │   ├── admin	//admin 模板目录
+│       │   │   ├── key.tpl	//邀请码管理模板
+│       │   │   ├── login.tpl	//登录模板
+│       │   │   ├── main.tpl	//后台首页模板
+│       │   │   ├── newTime.tpl	//新建时间轴文章模板
+│       │   │   ├── register.tpl //注册模板
+│       │   │   ├── style	//样式目录
+│       │   │   ├── time.tpl	//修改时间轴文章模板
+│       │   │   ├── time_list.tpl	//时间轴列表模板
+│       │   │   ├── top.tpl		//通用头模板
+│       │   │   └── umanage.tpl		//用户管理模板
+│       │   ├── css	//CMS自带样式
+│       │   ├── index.tpl	//默认
+│       │   ├── notice.tpl	//错误|正确信息显示模板
+│       │   ├── user		//user 模板目录
+│       │   │   ├── avatar.tpl	//头像模板
+│       │   │   ├── main.tpl		//用户首页模板
+│       │   │   ├── sgk_data.tpl	//取出数据来显示的模板
+│       │   │   ├── style			//样式目录
+│       │   │   ├── time.tpl	//时间轴模板
+│       │   │   ├── top.tpl		//通用头模板
+│       │   │   └── user_setting.tpl	//帐号设置模板
+│       │   └── validate.tpl	//验证邮箱模板
+│       └── templates_c	//smarty 模板编译目录
+├── rewite.txt //伪静态规则		
+│
+└── upload
+    ├── avatar      //头像上传目录
+    └── image       //文章图片上传目录
+
+
+
+
+最后更新：2015年4月16日，遗留问题：社工库查询的传值不对。待修复
+可用的搜索连接
+http://localhost/cms/search/搜索参数/搜索关键字/搜索模式
+详情看 user/main.tpl 和 user.php的sgk
