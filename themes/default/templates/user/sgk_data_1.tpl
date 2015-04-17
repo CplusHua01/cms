@@ -20,11 +20,11 @@
 <div class="col-lg-12">
     <div class="widget-container fluid-height clearfix">
         <div class="heading">
-            <i class="icon-table"></i>本次查询到:{$num}条数据
+            <i class="icon-table"></i>本次查询到:{$num}条数据,每页显示{$olPage}条数据,共{$pn}页
         </div>
         <div class="widget-content padded clearfix">
             <div class="table-responsive">
-                <table class="table table-hover table-bordered" align="center" id="data">
+                <table class="table table-hover table-bordered" align="center">
                     <thead>
                     <th>
                         用户名
@@ -64,6 +64,29 @@
                     {/section}
                     </tbody>
                 </table>
+
+                    <ul class="pagination">
+                    <li>
+                        <a class="icon" href="1"><i class="icon-long-arrow-left"></i></a>
+                    </li>
+                    {*<li class="active">*}
+                        {*<a href="#">1</a>*}
+                    {*</li>*}
+                        {section name=loop loop=$pn}
+                        {if $p eq $smarty.section.loop.index}
+                            <li class="active">
+                                <a href="{$smarty.section.loop.index}">{$smarty.section.loop.index}</a>
+                            </li>
+                            {else}
+                        <li>
+                        <a href="{$smarty.section.loop.index}">{$smarty.section.loop.index}</a>
+                        </li>
+                            {/if}
+                        {/section}
+                        <li>
+                        <a class="icon" href="#"><i class="icon-long-arrow-right"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

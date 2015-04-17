@@ -10,7 +10,7 @@
 </head>
 <body>
 <div align='center'>
-    <form method='get' action='{$url.root}/search/' >
+    <form method='post' action='{$url.root}/user/sgk' target="_blank" >
         {*<input name='do' value="user"type="hidden">*}
         {*<input name="act" value="sgk" type="hidden">*}
         <select class="regularSelect" id='searchMode' name="mode">
