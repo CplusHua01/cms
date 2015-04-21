@@ -1,3 +1,6 @@
+<img src="http://chuantu.biz/t2/3/1429594699x-954497721.png">
+<img src="http://www.mftp.info/20150402/1429594566x-635615210.png">
+<img src="http://www.mftp.info/20150402/1429594655x-635615210.png">
 <div id="container">
 <h3>Sky_Sgk程序，基与oldcms开发</h3>
 <p id="part1">
